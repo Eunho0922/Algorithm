@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D10BF73E29D303FD006AD190 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BF73D29D303FD006AD190 /* main.swift */; };
 		D1A82D6029D2FCCA00E3ADF6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A82D5F29D2FCCA00E3ADF6 /* main.swift */; };
 		D1A82D6D29D2FD1600E3ADF6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A82D6C29D2FD1600E3ADF6 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D10BF73929D303FD006AD190 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		D1A82D5A29D2FCCA00E3ADF6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D10BF73B29D303FD006AD190 /* Gogodon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gogodon; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10BF73D29D303FD006AD190 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D1A82D5C29D2FCCA00E3ADF6 /* swiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A82D5F29D2FCCA00E3ADF6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D1A82D6A29D2FD1600E3ADF6 /* LittleJeongmin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LittleJeongmin; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D10BF73829D303FD006AD190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1A82D5929D2FCCA00E3ADF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,11 +76,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D10BF73C29D303FD006AD190 /* Gogodon */ = {
+			isa = PBXGroup;
+			children = (
+				D10BF73D29D303FD006AD190 /* main.swift */,
+			);
+			path = Gogodon;
+			sourceTree = "<group>";
+		};
 		D1A82D5329D2FCCA00E3ADF6 = {
 			isa = PBXGroup;
 			children = (
 				D1A82D5E29D2FCCA00E3ADF6 /* swiftAlgorithm */,
 				D1A82D6B29D2FD1600E3ADF6 /* LittleJeongmin */,
+				D10BF73C29D303FD006AD190 /* Gogodon */,
 				D1A82D5D29D2FCCA00E3ADF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +99,7 @@
 			children = (
 				D1A82D5C29D2FCCA00E3ADF6 /* swiftAlgorithm */,
 				D1A82D6A29D2FD1600E3ADF6 /* LittleJeongmin */,
+				D10BF73B29D303FD006AD190 /* Gogodon */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +123,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D10BF73A29D303FD006AD190 /* Gogodon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10BF73F29D303FD006AD190 /* Build configuration list for PBXNativeTarget "Gogodon" */;
+			buildPhases = (
+				D10BF73729D303FD006AD190 /* Sources */,
+				D10BF73829D303FD006AD190 /* Frameworks */,
+				D10BF73929D303FD006AD190 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gogodon;
+			productName = Gogodon;
+			productReference = D10BF73B29D303FD006AD190 /* Gogodon */;
+			productType = "com.apple.product-type.tool";
+		};
 		D1A82D5B29D2FCCA00E3ADF6 /* swiftAlgorithm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1A82D6329D2FCCA00E3ADF6 /* Build configuration list for PBXNativeTarget "swiftAlgorithm" */;
@@ -138,6 +184,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					D10BF73A29D303FD006AD190 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					D1A82D5B29D2FCCA00E3ADF6 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -161,11 +210,20 @@
 			targets = (
 				D1A82D5B29D2FCCA00E3ADF6 /* swiftAlgorithm */,
 				D1A82D6929D2FD1600E3ADF6 /* LittleJeongmin */,
+				D10BF73A29D303FD006AD190 /* Gogodon */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D10BF73729D303FD006AD190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10BF73E29D303FD006AD190 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1A82D5829D2FCCA00E3ADF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +243,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D10BF74029D303FD006AD190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D10BF74129D303FD006AD190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		D1A82D6129D2FCCA00E3ADF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -302,7 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 66Q2NAKW7M;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -313,7 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 66Q2NAKW7M;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -345,6 +425,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D10BF73F29D303FD006AD190 /* Build configuration list for PBXNativeTarget "Gogodon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10BF74029D303FD006AD190 /* Debug */,
+				D10BF74129D303FD006AD190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1A82D5729D2FCCA00E3ADF6 /* Build configuration list for PBXProject "swiftAlgorithm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
