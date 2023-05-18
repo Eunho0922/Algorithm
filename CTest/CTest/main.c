@@ -1266,6 +1266,7 @@ int main()
 }
 */
 /*
+ //5번
 #include <stdio.h>
 
 int main()
@@ -1282,28 +1283,349 @@ int main()
     return 0;
 }
 */
-
+/*
 #include <stdio.h>
 
 int main()
 {
-    int i = 0, arr[100], min = 0;
+    int i = 0, arr[100], min = 10000, max = -10000;
     while (1) {
         scanf("%d", &arr[i]);
-        if(arr[i] >= 1000)
+        if(arr[i] == 0)
         {
-            min = arr[i];
+            break;
+        }
+        if(arr[i] % 2 == 0)
+        {
+            if(arr[i] > max)
+            {
+                max = arr[i];
+            }
+        }
+        else
+        {
+            if(min >= arr[i])
+            {
+                min = arr[i];
+            }
+        }
+        i++;
+    }
+    printf("짝수 max : %d, 홀수 min : %d\n",max, min);
+}
+*/
+
+//6번
+/*
+#include <stdio.h>
+
+int main()
+{
+    int arr[5], i = 0, j = 0, min = 0;
+    do
+    {
+        scanf("%d", &arr[i]);
+        i++;
+    }while(i < 5);
+    for (i = 0; i <= 3; i++) {
+        for (j = i + 1; j <= 4; j++) {
+            if(arr[i] > arr[j])
+            {
+                arr[i] = arr[j];
+            }
+        }
+    }
+    printf("%d", arr);
+}
+*/
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    char c;
+//    int arr[130] = { 0 };
+//    char alph;
+//    while (1) {
+//        scanf(" %c", &c);
+//        if(c < 97 || c > 122)
+//        {
+//            break;
+//        }
+//        arr[c]++;
+//    }
+//
+//    for (int i = 97; i < 122; i++) {
+//        if(arr[i] != 0)
+//        {
+//            printf("%c : %d\n",i, arr[i]);
+//        }
+//    }
+//
+//
+//}
+
+/*
+#include <stdio.h>
+
+int main()
+{
+    int arr[10] = { 0 };
+    int num;
+    while (1) {
+        scanf("%d", &num);
+        if(num == 0)
+        {
+            break;
+        }
+        arr[num % 10]++;
+    }
+    
+    for (int i = 0; i < 10; i++) {
+        if(arr[i] != 0)
+        {
+            printf("일의 자리 숫자 %d : %d\n", i, arr[i]);
+        }
+    }
+    
+}
+*/
+/*
+#include <stdio.h>
+
+int main()
+{
+    int arr[10] = { 0 };
+    int num;
+    while (1) {
+        scanf("%d", &num);
+        if(num == 0)
+        {
+            break;
+        }
+        arr[num / 10]++;
+    }
+    
+    for (int i = 0; i < 10; i++) {
+        if(arr[i] != 0)
+        {
+            printf("십의 자리 숫자 %d : %d\n", i, arr[i]);
+        }
+    }
+}
+*/
+/*
+#include <stdio.h>
+
+int main()
+{
+    int arr[50], i = 2;
+    arr[0] = 50;
+    scanf("%d", &arr[1]);
+    while (1) {
+        arr[i] =  arr[i - 2] - arr[i - 1];
+        if(arr[i] < 0)
+        {
             i++;
             break;
         }
         i++;
     }
+    for (int j = 0 ; j < i ; j++) {
+        printf("%d ", arr[j]);
+    }
+}
+*/
+
+//#include <stdio.h>
+//
+//int main() {
+//    int arr[5] = {1, 2, 3, 4, 5};
+//    printf("%p\n", arr);
+//    printf("%p\n", arr + 1);
+//    printf("%p\n", arr + 2);
+//    printf("%p\n", arr + 3);
+//    printf("%p\n", arr + 4);
+//    printf("%p\n", arr + 5);
+//    return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//int main() {
+//    int i, j;
+//    int arr[3][4] = { 1,2,3,4,5,6,7,8,9,10,11,12 };
+//
+//    printf("size : %d\n", sizeof(arr));
+//    for (i = 0; i < 3; i++) {
+//        for (j = 0; j < 4; j++) {
+//            printf("%d\t", arr[i][j]);
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+
+
+//#include <stdio.h>
+//int main()
+//{
+//    int i, j;
+//    int arr[3][4] = {
+//        { 1, 2, 3, 4},
+//        { 5, 6, 7, 8},
+//        { 9, 10, 11, 12}
+//    };
+//    printf("arr size: %d\n", sizeof(arr));
+//    for (i = 0; i < 3; i++) {
+//        for (j = 0; j < 4; j++) {
+//            printf("%d\t", arr[i][j]);
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//    int arr[3][3] = {0};
+//    for (int i = 0; i < 3; i++) {
+//        for (int j = 0; j < 3; j++) {
+//            scanf("%d", &arr[i][j]);
+//        }
+//    }
+//
+//    for (int i = 0; i < 3; i++) {
+//        for (int j = 0; j < 3; j++) {
+//            printf("%d\t", arr[i][j]);
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+
+
+//#include <stdio.h>
+//int main()
+//{
+//    int arr[8][9] = {0};
+//
+//    for (int i = 0; i < 8; i++) {
+//        for (int j = 0; j < 9; j++) {
+//            arr[i][j] = (i+2) * (j+1);
+//        }
+//    }
+//
+//    for (int i = 0; i < 8; i++) {
+//        for (int j = 0; j < 9; j++) {
+//            printf("%d\t", arr[i][j]);
+//        }
+//        printf("\n");
+//    }
+//
+//    return 0;
+//}
+
+
+//#include<stdio.h>
+//int main()
+//{
+//    int arr[5][5] = {
+//        {1,2,3,4,5},
+//        {6,7,8,9},
+//        {10,11,12},
+//        {13,14},
+//        {15}
+//    };
+//    for (int i = 0; i < 5; i++) {
+//            for (int j = 0; j < 5; j++) {
+//                printf("%d ", arr[i][j]);
+//            }
+//            printf("\n");
+//        }
+//    return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//    int arr[3][3] = { 0 };
+//    int cnt = 1;
+//    for (int i = 0; i < 3; i++) {
+//            for (int j = 0; j < 3; j++) {
+//                arr[i][j] = cnt;
+//                cnt++;
+//            }
+//        }
+//    for (int i = 0; i < 3; i++) {
+//            for (int j = 0; j < 3; j++) {
+//                printf("%d ", arr[i][j]);
+//            }
+//            printf("\n");
+//        }
+//
+//    return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int num, i = 0, save = 0;
+//    scanf("%d", &num);
+//    int arr[num];
+//    for ( i = 0; i < num; i++) {
+//        scanf("%d", &arr[i]);
+//    }
+//
+//    for ( i = 0; i < num; i++) {
+//        printf("%d ", arr[i]);
+//    }
+//    printf("\n");
+//
+//    for (int j = 0; j < num - 1; j++) {
+//        save = arr[j];
+//        for ( i = 0; i < num; i++) {
+//            arr[i] = arr[i + 1];
+//            printf("%d ", arr[i]);
+//        }
+//        arr[num - 1] = save;
+//        printf("\n");
+//    }
+//
+//    return 0;
+//}
+
+
+#include <stdio.h>
+
+int main()
+{
+    int i, j, arr[5][5], avarage = 0;
     
-    for (; i > 0; i--) {
-        if(min >= arr[i])
-        {
-            min = arr[i];
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 5; j++) {
+            scanf("%d", &arr[i][j]);
         }
     }
-    printf("%d", min);
+    
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 5; j++) {
+            avarage += j;
+        }
+    }
+    for (; <#condition#>; <#increment#>) {
+        <#statements#>
+    }
+    avarage /= i;
+    if (avarage >= 80) {
+        printf("pass");
+    }
+    else {
+        printf("fighting");
+    }
+    
 }
