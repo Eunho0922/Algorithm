@@ -1600,32 +1600,194 @@ int main()
 //}
 
 
-#include <stdio.h>
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int i, j, arr[5][4], avarage = 0;
+//
+//    for (i = 0; i < 5; i++) {
+//        for (j = 0; j < 4; j++) {
+//            scanf("%d", &arr[i][j]);
+//        }
+//    }
+//
+//    for (i = 0; i < 5; i++) {
+//        for (j = 0; j < 4; j++) {
+//            avarage += arr[i][j];
+//        }
+//        avarage /= 4;
+//        if (avarage >= 80) {
+//            arr[i][0] = 1;
+//        } else {
+//            arr[i][0] = 0;
+//        }
+//        avarage = 0;
+//    }
+//
+//    for (int j = 0; j < 5; j++) {
+//        if(arr[j][0] == 1)
+//        {
+//            printf("잘함 \n");
+//        }
+//        else{
+//            printf("파이팅 \n");
+//        }
+//    }
+//
+//    return 0;
+//}
 
-int main()
-{
-    int i, j, arr[5][5], avarage = 0;
-    
-    for (i = 0; i < 5; i++) {
-        for (j = 0; j < 5; j++) {
-            scanf("%d", &arr[i][j]);
-        }
-    }
-    
-    for (i = 0; i < 5; i++) {
-        for (j = 0; j < 5; j++) {
-            avarage += j;
-        }
-    }
-    for (; <#condition#>; <#increment#>) {
-        <#statements#>
-    }
-    avarage /= i;
-    if (avarage >= 80) {
-        printf("pass");
-    }
-    else {
-        printf("fighting");
-    }
-    
-}
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int arr[3][4] = {0}, num[3][4] = {0}, i, j;
+//    for (i = 0; i < 3; i++) {
+//           for (j = 0; j < 4; j++) {
+//               scanf("%d", &arr[i][j]);
+//           }
+//       }
+//    printf("2\n");
+//    for (i = 0; i < 3; i++) {
+//           for (j = 0; j < 4; j++) {
+//               scanf("%d", &num[i][j]);
+//           }
+//       }
+//
+//    for (i = 0; i < 3; i++) {
+//           for (j = 0; j < 4; j++) {
+//               printf("%d\t", (arr[i][j]) * (num[i][j]));
+//           }
+//        printf("\n");
+//       }
+//
+//}
+
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int i, j;
+//    char arr[4][4];
+//    for (i = 0; i < 4; i++) {
+//               for (j = 0; j < 4; j++) {
+//                   scanf(" %c", &arr[i][j]);
+//               }
+//           }
+//
+//    for (i = 0; i < 4; i++) {
+//               for (j = 0; j < 4; j++) {
+//                   printf("%c\t", arr[i][j] + 32);
+//               }
+//        printf("\n");
+//           }
+//    return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int arr[3][3], i ,j;
+//    for (i = 0; i < 3; i++) {
+//                  for (j = 0; j < 3; j++) {
+//                      scanf("%d", &arr[i][j]);
+//                  }
+//              }
+//
+//    for (i = 0; i < 3; i++) {
+//                   for (j = 0; j < 3; j++) {
+//                       if(arr[i][j == 1])
+//                       {
+//                           printf("%d\t", arr[i][j]);
+//                       }
+//                       else {
+//                            printf("%d\t", arr[i][j] + 1);
+//                       }
+//                   }
+//            printf("\n");
+//               }
+//
+//}
+
+//#include <stdio.h>
+//
+// 배열 심화 1번 푸는중
+//int main()
+//{
+//    char arr[1000];
+//    int i = 0;
+//    while (1) {
+//        scanf(" %c", &arr[i]);
+//        if(arr[i] == 'EOF'){
+//            break;
+//        }
+//        arr[i] += 32;
+//        i++;
+//    }
+//    for (int j = 0; j <= i; j++) {
+//        printf("%c", arr[j]);
+//    }
+//}
+
+//#include <stdio.h>
+//
+//void line(){
+//    printf("===========\n");
+//}
+//
+//int main()
+//{
+//    line();
+//    printf("함수 호출 연습\n");
+//    line();
+//}
+
+
+//#include <stdio.h>
+//
+//void star1()
+//{
+//    printf("  *\n");
+//}
+//
+//void star2()
+//{
+//    printf(" ***\n");
+//}
+//
+//void star3()
+//{
+//    printf("*****\n");
+//}
+//
+//int main()
+//{
+//    star1();
+//    star2();
+//    star3();
+//    star1();
+//    star3();
+//    star2();
+//    star1();
+//}
+
+
+//#include <stdio.h>
+//
+//void string() {
+//    printf("나를 호출했니?\n");
+//}
+//
+//int main()
+//{
+//    int num;
+//    printf("호출할 횟수를 입력하세요 : ");
+//    scanf("%d", &num);
+//    for (int n = 0; n < num; n++) {
+//        string();
+//    }
+//}
