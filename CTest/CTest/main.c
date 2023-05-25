@@ -454,7 +454,7 @@ int main()
         for (j = n; j >= i; j--) {
             printf("*");
         }
-        for (i = 1 ; ㅇ; 박재민 ) {
+        for (i = 1 ; ; ) {
             <#statements#>
         }
         printf("\n");
@@ -1791,3 +1791,197 @@ int main()
 //        string();
 //    }
 //}
+
+//#include <stdio.h>
+//
+//void printStar(int cnt)
+//{
+//    for (int i = 1; i <= cnt; i++) {
+//        printf("  *  \n");
+//        printf(" *** \n");
+//        printf("*****\n");
+//    }
+//}
+//
+//int main()
+//{
+//    int num;
+//    scanf("%d", &num);
+//    printStar(num);
+//    return 0;
+//}
+
+//#include <stdio.h>
+//
+//int add(int n1, int n2)
+//{
+//    int n3 = n1 + n2;
+//    return n3;
+//}
+//
+//void scanAndPrint() {
+//    int a, b, sum;
+//    printf("정수 두 개를 입력하세요 : ");
+//    scanf("%d %d", &a, &b);
+//    sum = add(a, b);
+//    printf("%d + %d = %d\n", a, b, sum);
+//}
+//
+//int main() {
+//
+//    scanAndPrint();
+//    return 0;
+//}
+
+//#include <stdio.h>
+//int GetMax(int, int, int);
+//
+//int main()
+//{
+//    int nResult = 0;
+//    int x, y, z;
+//    printf("세 개의 정수 입력 : ");
+//    scanf("%d %d %d", &x, &y, &z);
+//
+//    printf("Max : %d\n", GetMax(x, y, z));
+//
+//    printf("Max : %d\n", GetMax(x, y, z) * 2);
+//
+//    printf("MAx : %d\n", nResult = GetMax(x, y, z));
+//
+//    return 0;
+//}
+//
+//
+//int GetMax(int a, int b, int c)
+//{
+//    int nMax = a;
+//    if(b > nMax) nMax = b;
+//    if(c > nMax) nMax = c;
+//
+//    return nMax;
+//}
+
+//#include <stdio.h>
+//
+//int add(int num1, int num2);
+//void ShowResult(int num);
+//int scanNum();
+//void HowToUseThisProg();
+//
+//int main()
+//{
+//    int result, num1, num2;
+//
+//    HowToUseThisProg();
+//    num1 = scanNum();
+//    num2 = scanNum();
+//    result = add(num1, num2);
+//    ShowResult(result);
+//    return 0;
+//}
+//
+//int add(int num1, int num2)
+//{
+//    return num1 + num2;
+//}
+//
+//void ShowResult(int num)
+//{
+//    printf("덧셈결과 출력 : %d\n", num);
+//}
+//
+//int scanNum()
+//{
+//    int num;
+//    scanf("%d", &num);
+//    return num;
+//}
+//
+//void HowToUseThisProg()
+//{
+//    printf("두 개의 정수를 입력하시면 덧셈결과가 출력됩니다.\n");
+//    printf("자! 그럼 두개의 정수를 입력하세요.\n");
+//
+//}
+
+//#include <stdio.h>
+//
+//int main(){
+//    char arr[1000];
+//    int i = 0;
+//
+//    scanf("%s", &arr[i]);
+//
+//    while(1) {
+//        if(arr[i] == '\0') break;
+//        if(arr[i] >= 65 && arr[i] <= 90) arr[i] += 32;
+//        else if (arr[i] >= 97 && arr[i] <= 122) arr[i] -= 32;
+//        i++;
+//    }
+//
+//    for (int j = 0; j < i; j++) {
+//        printf("%c", arr[j]);
+//    }
+//
+//}
+
+//#include <stdio.h>
+//
+//int NumCompare(int num1, int num2);
+//int main()
+//{
+//    int n1, n2;
+//    while (1) {
+//        printf("두 정수 입력 : ");
+//        scanf("%d %d", &n1, &n2);
+//        if(n1 == 0 || n2 == 0) break;
+//        printf("%d과 %d중에 큰 수는 %d이다\n", n1, n2, NumCompare(n1, n2));
+//    }
+//    return 0;
+//}
+//int NumCompare(int num1, int num2)
+//{
+//    if (num1 > num2)
+//        return num1;
+//    else
+//        return num2;
+//}
+
+
+#include <stdio.h>
+
+int compare(int num1, int num2);
+int absvalue(int num);
+
+int main()
+{
+    int num1, num2;
+    printf("두 개의 정수 입력 : ");
+    scanf("%d %d", &num1, &num2);
+    printf("%d와 %d 중 절대값이 큰 정수 : %d\n", num1, num2, compare(num1, num2));
+    return 0;
+}
+
+int compare(int n1, int n2)
+{
+    if(absvalue(n1) > absvalue(n2))
+        return n1;
+    else
+        return n2;
+}
+
+int absvalue(int num)
+{
+    if(num < 0)
+    {
+        num *= -1;
+        return num;
+    }
+    else
+    {
+        return num;
+    }
+}
+
+
