@@ -1949,39 +1949,290 @@ int main()
 //}
 
 
-#include <stdio.h>
+//#include <stdio.h>
+//
+//int compare(int num1, int num2);
+//int absvalue(int num);
+//
+//int main()
+//{
+//    int num1, num2;
+//    printf("두 개의 정수 입력 : ");
+//    scanf("%d %d", &num1, &num2);
+//    printf("%d와 %d 중 절대값이 큰 정수 : %d\n", num1, num2, compare(num1, num2));
+//    return 0;
+//}
+//
+//int compare(int n1, int n2)
+//{
+//    if(absvalue(n1) > absvalue(n2))
+//        return n1;
+//    else
+//        return n2;
+//}
+//
+//int absvalue(int num)
+//{
+//    if(num < 0)
+//    {
+//        num *= -1;
+//        return num;
+//    }
+//    else
+//    {
+//        return num;
+//    }
+//}
 
-int compare(int num1, int num2);
-int absvalue(int num);
 
-int main()
-{
-    int num1, num2;
-    printf("두 개의 정수 입력 : ");
-    scanf("%d %d", &num1, &num2);
-    printf("%d와 %d 중 절대값이 큰 정수 : %d\n", num1, num2, compare(num1, num2));
-    return 0;
-}
-
-int compare(int n1, int n2)
-{
-    if(absvalue(n1) > absvalue(n2))
-        return n1;
-    else
-        return n2;
-}
-
-int absvalue(int num)
-{
-    if(num < 0)
-    {
-        num *= -1;
-        return num;
-    }
-    else
-    {
-        return num;
-    }
-}
+//#include <stdio.h>
+//
+//int square(int n1);
+//
+//int main()
+//{
+//    int num;
+//    printf("제곱할 정수 입력 : ");
+//    scanf("%d", &num);
+//    printf("%d의 제곱 : %d", num,square(num));
+//
+//}
+//
+//int square(n1){
+//    return (n1 * n1);
+//}
 
 
+//#include <stdio.h>
+//
+//int plus(int n1);
+//int minus(int n2);
+//
+//int main()
+//{
+//    int num;
+//    printf("정수 입력 : ");
+//    scanf("%d", &num);
+//    printf("10 더한 값 : %d\n10 뺀 값 : %d", plus(num), minus(num));
+//
+//}
+//
+//
+//int plus(n1)
+//{
+//    return n1 + 10;
+//}
+//
+//int minus(n2)
+//{
+//    return n2 - 10;
+//}
+
+
+//#include <stdio.h>
+//
+//int GetMax(int a, int b, int c);
+//int GetMin(int a, int b, int c);
+//
+//int main()
+//{
+//    int n1, n2, n3;
+//    printf("세 개의 정수 입력 : ");
+//    scanf("%d %d %d", &n1, &n2, &n3);
+//    printf("가장 큰 값 : %d\n", GetMax(n1, n2, n3));
+//    printf("가장 작은 값 : %d", GetMin(n1, n2, n3));
+//}
+//
+//
+//int GetMax(a, b, c)
+//{
+//    int Max = a;
+//    if (b > Max)
+//        Max = b;
+//    else if(c > Max)
+//        Max = c;
+//    return Max;
+//}
+//
+//int GetMin(a, b, c)
+//{
+//    int Min = a;
+//    if (b < Min)
+//        Min = b;
+//    else if (c < Min)
+//        Min = c;
+//    return Min;
+//}
+
+
+//#include <stdio.h>
+//
+//double avarage(double a,double b,double c);
+//
+//int main()
+//{
+//    double num1, num2, num3;
+//    printf("세 개의 정수 입력 : ");
+//    scanf("%lf %lf %lf", &num1, &num2, &num3);
+//    printf("세 정수의 평균 : %.2lf\n", avarage(num1, num2, num3));
+//}
+//
+//double avarage(double a,double b, double c)
+//{
+//    return (a + b + c) / 3;
+//}
+
+//#include <stdio.h>
+//
+//int plus(int num1,int num2);
+//int minus(int minus_num1,int minus_num2);
+//int X(int num1,int num2);
+//int Y(int num1, int num2);
+//
+//int main()
+//{
+//    int n1, n2;
+//    char a;
+//    printf("두 정수 입력 : ");
+//    scanf("%d %d", &n1, &n2);
+//    printf("연산자 입력 : ");
+//    scanf("%c", &a);
+//    if(a == '+') printf("%d %c %d = %d", n1, a, n2, plus(n1, n2));
+//    else if(a == '-') printf("%d %c %d = %d", n1, a, n2, minus(n1, n2));
+//    else if(a == '*') printf("%d %c %d = %d", n1, a, n2, X(n1, n2));
+//    else if(a == '/') printf("%d %c %d = %d", n1, a, n2, Y(n1, n2));
+//    else printf("0");
+//}
+//
+//int plus(num1, num2)
+//{
+//    return num1 + num2;
+//}
+//
+//int minus(num1, num2)
+//{
+//    return num1 - num2;
+//}
+//
+//int X(num1, num2)
+//{
+//    return num1 * num2;
+//}
+//
+//int Y(num1, num2)
+//{
+//    return num1 / num2;
+//}
+
+//#include <stdio.h>
+//
+//float CtoF(float num1, float num2);
+//
+//int main()
+//{
+//    int select;
+//    float n1, n2 = 0;
+//    printf("1. 섭씨 -> 화씨\n2. 화씨 -> 섭씨\n번호 선택 >> ");
+//    scanf("%d", &select);
+//    if(select == 1){
+//        n2 = 1;
+//        printf("섭씨 입력 : ");
+//        scanf("%f",  &n1);
+//        printf("반환된 화씨 : %.3f\n", CtoF(n1, n2));
+//    }
+//    else if(select == 2){
+//        n2 = 0;
+//        printf("화씨 입력 : ");
+//        scanf("%f",  &n1);
+//        printf("반환된 섭씨 : %.3f\n", CtoF(n1, n2));
+//    }
+//    else {
+//        printf("입력 오류\n");
+//    }
+//
+//}
+//
+//float CtoF(float num1,float num2)
+//{
+//    if(num2 == 1)
+//    {
+//        return num1 * 1.8 + 32;
+//    }
+//    else{
+//        return (num1 - 32) / 1.8;
+//    }
+//}
+
+
+//#include <stdio.h>
+//
+//void result();
+//
+//int main() {
+//    result();
+//}
+//
+//void result()
+//{
+//    int n1, count = 0;
+//    printf("정수 입력 : ");
+//    scanf("%d", &n1);
+//    for (int j = 1; j <= n1; j++) {
+//        if(n1 % j == 0)
+//        {
+//            count++;
+//        }
+//    }
+//    if(count == 2) printf("%d는 소수입니다.", n1);
+//    else printf("%d는 소수가 아닙니다.", n1);
+//    return;
+//}
+
+//#include <stdio.h>
+//
+//int Pow(int num1, int num2);
+//
+//int main()
+//{
+//    int n1, n2;
+//    printf("두 정수를 입력하세요 : ");
+//    scanf("%d %d", &n1, &n2);
+//    printf("%d의 %d 제곱 : %d\n", n1, n2, Pow(n1, n2));
+//}
+//
+//int Pow(int num1, int num2)
+//{
+//    int result = num1;
+//    if(num2 == 0)
+//    {
+//        return 0;
+//    }
+//    for (int i = 1; i < num2; i++) {
+//        result *= num1;
+//    }
+//    return result;
+//}
+
+//⚡️ 전기 요금 계산 프로그램
+// 월, 년, 몇달 치 계산, 전체적인 틀, 계산기
+
+//#include <stdio.h>
+//
+//int Electricity_Cost_Calculator(int Cost);
+//void Electricity_Cost_Main(void);
+//
+//int main()
+//{
+//    Electricity_Cost_Main();
+//}
+//
+//void Electricity_Cost_Main(void)
+//{
+//    int electricity_consumption;
+//    printf(<#const char *restrict, ...#>)
+//}
+//
+//int Electricity_Cost_Calculator(int Cost)
+//{
+//
+//}
