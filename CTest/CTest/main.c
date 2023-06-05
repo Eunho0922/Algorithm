@@ -2236,3 +2236,81 @@ int main()
 //{
 //
 //}
+
+
+//#include <stdio.h>
+//int n1, result_num;
+//int result(int num);
+//
+//int main()
+//{
+//    printf("자연수를 입력하세요 : ");
+//    scanf("%d", &n1);
+//    printf("%d! = %d\n", n1, result(n1));
+//    return 0;
+//}
+//
+//int result(int num)
+//{
+//    result_num = n1;
+//    for (int j = n1 - 1; j > 0 ; j--) {
+//        result_num *= j;
+//    }
+//    return result_num;
+//}
+
+//#include <stdio.h>
+//
+//void result(void);
+//
+//int main() {
+//    result();
+//}
+//
+//void result(void)
+//{
+//    int n1, count = 0;
+//    printf("자연수를 입력하세요 : ");
+//    scanf("%d", &n1);
+//    for (int j = 1; j <= n1; j++) {
+//        if(n1 % j == 0)
+//        {
+//            count++;
+//        }
+//    }
+//    printf("%d의 약수 개수 : %d\n", n1, count);
+//    return;
+//}
+
+
+//#include <stdio.h>
+//
+//int GCD(int GCD_1, int GCD_2);
+//int LCM(int LCM_1, int LCM_2);
+//
+//int main()
+//{
+//    int num1, num2;
+//    printf("두 개의 자연수를 입력하세요 : ");
+//    scanf("%d %d", &num1, &num2);
+//    printf("두 수의 최대공약수 : %d\n", GCD(num1, num2));
+//    printf("두 수의 최소공배수 : %d\n", LCM(num1, num2));
+//}
+//
+//int GCD(int GCD_1, int GCD_2)
+//{
+//    int GCD_MAX = 1, MAX = 0;
+//    while (GCD_MAX < GCD_1 || GCD_MAX < GCD_2) {
+//        if(GCD_1 % GCD_MAX == 0 && GCD_2 % GCD_MAX == 0)
+//        {
+//            MAX = GCD_MAX;
+//        }
+//        GCD_MAX++;
+//    }
+//    return MAX;
+//}
+//
+//int LCM(int LCM_1, int LCM_2)
+//{
+//    return (LCM_1 * LCM_2) / GCD(LCM_1, LCM_2);
+//}
