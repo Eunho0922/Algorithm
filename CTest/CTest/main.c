@@ -2259,28 +2259,28 @@ int main()
 //    return result_num;
 //}
 
-#include <stdio.h>
-
-void result(void);
-
-int main() {
-    result();
-}
-
-void result(void)
-{
-    int n1, count = 0;
-    printf("자연수를 입력하세요 : ");
-    scanf("%d", &n1);
-    for (int j = 1; j <= n1; j++) {
-        if(n1 % j == 0)
-        {
-            count++;
-        }
-    }
-    printf("%d의 약수 개수 : %d\n", n1, count);
-    return;
-}
+//#include <stdio.h>
+//
+//void result(void);
+//
+//int main() {
+//    result();
+//}
+//
+//void result(void)
+//{
+//    int n1, count = 0;
+//    printf("자연수를 입력하세요 : ");
+//    scanf("%d", &n1);
+//    for (int j = 1; j <= n1; j++) {
+//        if(n1 % j == 0)
+//        {
+//            count++;
+//        }
+//    }
+//    printf("%d의 약수 개수 : %d\n", n1, count);
+//    return;
+//}
 
 
 //#include <stdio.h>
@@ -2348,25 +2348,273 @@ void result(void)
 //    return (LCM_1 * LCM_2) / GCD(LCM_1, LCM_2);
 //}
 
+//#include <stdio.h>
+//
+//void result(void);
+//
+//int main() {
+//    result();
+//}
+//
+//void result(void)
+//{
+//    int n1, count = 0;
+//    printf("자연수를 입력하세요 : ");
+//    scanf("%d", &n1);
+//    for (int j = 1; j <= n1; j++) {
+//        if(n1 % j == 0)
+//        {
+//            count++;
+//        }
+//    }
+//    printf("%d의 약수 개수 : %d\n", n1, count);
+//    return;
+//}
+//
+//
+//#include <stdio.h>
+//
+//int plus(int n1);
+//int minus(int n2);
+//
+//int main()
+//{
+//    int num;
+//    printf("정수 입력 : ");
+//    scanf("%d", &num);
+//    printf("10 더한 값 : %d\n10 뺀 값 : %d", plus(num), minus(num));
+//
+//}
+//
+//
+//int plus(n1)
+//{
+//    return n1 + 10;
+//}
+//
+//int minus(n2)
+//{
+//    return n2 - 10;
+//}
+
+//1 1
+//2 1
+//3 1
+//4 1
+//5 1
+
+//#include <stdio.h>
+//
+//int add(int num);
+//
+//int main(void)
+//{
+//
+//    int n;
+//    while (1) {
+//        printf("입력 : ");
+//        scanf("%d", &n);
+//        if(n == 0) break;
+//        printf("누적 : %d\n", add(n));
+//    }
+//    return 0;
+//}
+//
+//int add(int num)
+//{
+//    static int total = 0;
+//    total += num;
+//    return total;
+//}
+
+
+//#include <stdio.h>
+//void func(int n);
+//
+//int main(void)
+//{
+//    func(3);
+//    return 0;
+//}
+//
+//void func(int n)
+//{
+//    if (n == 0) return;
+//    printf("재귀호출 전 : %d\n", n);
+//    func(n - 1);
+//    printf("재귀호출 후 : %d\n", n);
+//}
+
+//#include <stdio.h>
+//
+//int func(int n)
+//{
+//    if(n > 10) return 0;
+//    return n + func(n+1);
+//}
+//
+//int main(void)
+//{
+//    printf("재귀함수 결과값 : %d\n", func(1));
+//    return 0;
+//}
+
+// 호출 순서 main -> 1 + func(1) -> 2+  func(2) -> func(3) -> func(4) -> func(5) ->  func(6)
+// ->  func(7) ->  func(8) -> func(9) -> func(10) -> func(11) -> func(10) -> func(9) -> func(8) -> func(6)-> func(5)-> func(4)-> func(3)-> func(2)-> func(1)
+//#include <stdio.h>
+//int n2;
+//void odd(int num1, int num2)
+//{
+//    if(num1 > num2) return;
+//    if(num1 % 2 == 1) printf("%d ", num1);
+//    odd(num1 + 1, num2);
+//}
+//
+//int main(void)
+//{
+//    int n1, n2;
+//    printf("두 수 입력 : ");
+//    scanf("%d %d", &n1, &n2);
+//    odd(n1, n2);
+//    return 0;
+//}
+
+//#include <stdio.h>
+//
+//int result(int num)
+//{
+//    if(num == 1) return 1;
+//    if(num == 2) return 1;
+//    return result(num - 2) + result(num - 1);
+//}
+//
+//int main(void)
+//{
+//    int n1;
+//    printf("몇 번째 피보나치 수 출력? : ");
+//    scanf("%d", &n1);
+//    printf("%d번째 피보나치 수 : %d\n", n1, result(n1));
+//}
+
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//    int num1 = 20;
+//    int num2 = 30;
+//
+//    int* pnum1 = &num1;
+//    int* pnum2 = &num2;
+//
+//    printf(" num1 : %9d    &num1 : %p\n", num1, &num1);
+//    printf(" num2 : %9d    &num2 : %p\n", num2, &num2);
+//
+//    printf("pnum1 : %p &pnum1 : %p\n", pnum1, &pnum1);
+//    printf("pnum2 : %p &pnum1 : %p\n", pnum2, &pnum2);
+//}
+
+//예제5
+//#include<stdio.h>
+//int main()
+//{
+//    int num = 10;
+//    int* pnum = &num;
+//
+//    printf("num   : %d   pnum : %p\n", num, pnum);
+//    printf("*pnum : %d\n", *pnum);
+//
+//    *pnum = 20;
+//
+//    printf("*pnum : %d   pnum : %p", *pnum, pnum);
+//    return 0;
+//}
+
+//
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//    int answer = 0, choice = 0;
+//
+//    printf("학생회장 선거 투표를 진행하시려면 8을 눌러 주세요 -> ");
+//    scanf("%d", &answer);
+//
+//    if(answer != 8) return 0;
+//    printf("1. 강지안\n2. 최서현\n");
+//    while (1) {
+//        printf("번호를 선택해주세요. -> "), scanf("%d", &choice), answer = choice == 1 ? printf("강지안을 투표하겠습니다.\n") : choice == 2 ? printf("최서현을 투표하겠습니다.\n") : printf("다시 투표해주십시오.\n");
+//        if(choice == 1 || choice == 2) break;
+//
+//    }
+//}
+
+// x의 주소 10 y의 주소 20
+
+//예제6
+//#include<stdio.h>
+//int main(void)
+//{
+//    int x = 10, y = 20;
+//    int *p;
+//
+//    p = &x;
+//    printf("p = %p\n", p);
+//    printf("*p = %d\n", *p);
+//
+//    p = &y;
+//    printf("p = %p\n", p);
+//    printf("*p = %d\n", *p);
+//
+//    return 0;
+//}
+
+//100 num1의 주소 num1의 주소 100
+// 120 num1의 주소 num1의 주소 120
+// 200 num2의 주소 num2의 주소 200
+// 400 num2의 주소 num2의 주소 400
+
+//예제8
+//#include<stdio.h>
+//int main(void)
+//{
+//    int num1 = 100, num2 = 200;
+//    int* pnum;
+//
+//    // 1번
+//    pnum = &num1; // 포인터 pnum이 num1의 주소를 가리키고 있음
+//    printf("1. num1 : %d\t&num1 : %p\tpnum : %p\t*pnum : %d\n", num1, &num1, pnum, *pnum);
+//
+//    // 2번
+//    (*pnum) += 20; // *pnum은 num1과 같다고 생각하면 됨. 즉, num1 += 20;
+//    printf("2. num1 : %d\t&num1 : %p\tpnum : %p\t*pnum : %d\n", num1, &num1, pnum, *pnum);
+//
+//    // 3번
+//    pnum = &num2; // 포인터 pnum이 num2의 주소를 가리키고 있음
+//    printf("3. num2 : %d\t&num2 : %p\tpnum : %p\t*pnum : %d\n", num2, &num2, pnum, *pnum);
+//
+//    // 4번
+//    (*pnum) *= 2; // *pnum은 num2과 같다고 생각하면 됨. 즉, num2 *= 2;
+//    printf("4. num2 : %d\t&num2 : %p\tpnum : %p\t*pnum : %d\n", num2, &num2, pnum, *pnum);
+//
+//    return 0;
+//}
+
+//예제10
+//#include<stdio.h>
+//int main(void)
+//{
+//    double i;
+//    double *pd;
+//
+//    pd = &i;
+//    *pd = 36.5;
+//
+//    return 0;
+//}
+
 #include <stdio.h>
 
-void result(void);
-
-int main() {
-    result();
-}
-
-void result(void)
+int main(void)
 {
-    int n1, count = 0;
-    printf("자연수를 입력하세요 : ");
-    scanf("%d", &n1);
-    for (int j = 1; j <= n1; j++) {
-        if(n1 % j == 0)
-        {
-            count++;
-        }
-    }
-    printf("%d의 약수 개수 : %d\n", n1, count);
-    return;
+    
 }
