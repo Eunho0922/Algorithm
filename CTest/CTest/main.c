@@ -2612,13 +2612,413 @@ int main()
 //    return 0;
 //}
 
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//    char nArr[100];
+//    while (1) {
+//        scanf(" %s", &nArr);
+//        if(&nArr[0] == ) {
+//
+//        }
+//
+//    }
+//    printf("%s", nArr);
+//    return 0;
+//}
+
+// 묵찌빠 - 가위바위보 게임
+//#include <stdio.h>
+//#include <stdlib.h>
+//int choose;
+//int score;
+//int save_input[100] = {0, 1, 2};
+//int random_number(void);
+//int input(int input_num);
+//void output(int output_num);
+//void comp(int comp_num);
+//void game_end(void);
+//void text (void);
+//
+//int main(void)
+//{
+//    text();
+//    input(choose);
+//    comp(choose);
+//
+//    return 0;
+//}
+//
+//int input(int input_num)
+//{
+//    int box;
+//
+//    while(1){
+//        printf("1. 가위\n2. 바위\n3. 보\n하나를 선택하세요. : ");
+//        scanf("%d", &box);
+//        if (box == 1) {
+//            return 0;
+//            break;
+//        }
+//        else if (box == 2) {
+//            return 1;
+//            break;
+//        }
+//        else if (box == 3) {
+//            return 2;
+//            break;
+//        }
+//        else {
+//            printf("다른 수를 입력하세요.\n");
+//            continue;
+//        }
+//    }
+//}
+//
+//void comp(int comp_num) { //값 비교
+//    int random = random_number();
+//    int n1 = 0, n2 = 1, n3 = 2;
+//    switch(comp_num) {
+//        case 0:
+//            if(comp_num==random) { score++; output(n1); game_end();}
+//            else if(random==2) {  score++; output(n2); input(choose); }
+//            else { output(n3); game_end();}
+//            break;
+//        case 1:
+//            if(comp_num==random) { score++; output(n1); game_end();}
+//            else if(random==0) {  score++; output(n2); input(choose); }
+//            else { output(n3); game_end();}
+//            break;
+//        case 2:
+//            if(comp_num==random) { score++; output(n1); game_end();}
+//            else if(random==1) {  score++; output(n2); input(choose); }
+//            else { output(n3); game_end(); }
+//            break;
+//    }
+//}
+//
+//
+//void output(int output_num) {
+//    if (output_num == 0) { printf("비겼습니다.\n"); }
+//    else if (output_num == 1) {printf("이겼습니다.\n");}
+//    else { printf("졌습니다.\n"); }
+//    return;
+//}
+//
+//void game_end(void) {
+//    printf("게임이 종료 되었습니다!!!\nTotal Score : %d\n즐겨주셔서 감사합니다!\n", score);
+//}
+//
+//
+//int random_number(void)
+//{
+//    return rand() % 3;
+//}
+//
+//void text (void) {
+//   printf("\n\n");
+//   printf("             ##       #####   ##             ##       #####   ##      ##     ##      \n");
+//   printf("     ######   ##     ##   ##   ##   ##    ##  ##     ##   ##   ##     #########      \n");
+//   printf("         ##   ##      #####    ##   ########  ##      #####    ##     ##     ##      \n");
+//   printf("         ##   ####  #############   ##    ##  ####  #############     #########      \n");
+//   printf("        ##    ##         ##    ##   ########  ##         ##    ##         ##         \n");
+//   printf("              ##        ##     ##             ##        ##     ##  ################  \n");
+//   printf("\n\n");
+//}
+
+
+
+// 묵찌빠 - 가위바위보 게임
+//#include <stdio.h>
+//#include <stdlib.h>
+//int choose;
+//int score;
+//int save_input[100] = {0, 1, 2};
+//int random_number(void);
+//int input();
+//void output(int output_num);
+//void comp(int comp_num);
+//void game_end(void);
+//void text (void);
+//
+//
+//int main(void)
+//{
+//    text();
+//    input();
+//    comp(choose);
+//
+//    return 0;
+//}
+//
+//int input()
+//{
+//    int box;
+//
+//    while(1){
+//        printf("1. 가위\n2. 바위\n3. 보\n하나를 선택하세요. : ");
+//        scanf("%d", &box);
+//        if (box == 1) {
+//            return 0;
+//            break;
+//        }
+//        else if (box == 2) {
+//            return 1;
+//            break;
+//        }
+//        else if (box == 3) {
+//            return 2;
+//            break;
+//        }
+//        else {
+//            printf("다른 수를 입력하세요.\n");
+//            continue;
+//        }
+//    }
+//}
+//
+//void comp(int comp_num) { //값 비교
+//    int random = random_number();
+//    int n1 = 0, n2 = 1, n3 = 2;
+//    switch(comp_num) {
+//        case 0:
+//            if(comp_num==random) { score++; output(n1); game_end();}
+//            else if(random==2) {  score++; output(n2); input(); }
+//            else { output(n3); game_end();}
+//            break;
+//        case 1:
+//            if(comp_num==random) { score++; output(n1); game_end();}
+//            else if(random==0) {  score++; output(n2); input(); }
+//            else { output(n3); game_end();}
+//            break;
+//        case 2:
+//            if(comp_num==random) { score++; output(n1); }
+//            else if(random==1) {  score++; output(n2); input(); }
+//            else { output(n3); game_end();}
+//            break;
+//    }
+//}
+//
+//
+//void output(int output_num) {
+//    if (output_num == 0) { printf("비겼습니다.\n"); }
+//    else if (output_num == 1) {printf("이겼습니다.\n");}
+//    else { printf("졌습니다.\n"); }
+//    return;
+//}
+//
+//void game_end(void) {
+//    printf("게임이 종료 되었습니다!!!\nTotal Score : %d\n즐겨주셔서 감사합니다!\n", score);
+//}
+//
+//
+//int random_number(void)
+//{
+//    return rand() % 3;
+//}
+//
+//void text (void) {
+//   printf("\n\n");
+//   printf("             ##       #####   ##             ##       #####   ##      ##     ##      \n");
+//   printf("     ######   ##     ##   ##   ##   ##    ##  ##     ##   ##   ##     #########      \n");
+//   printf("         ##   ##      #####    ##   ########  ##      #####    ##     ##     ##      \n");
+//   printf("         ##   ####  #############   ##    ##  ####  #############     #########      \n");
+//   printf("        ##    ##         ##    ##   ########  ##         ##    ##         ##         \n");
+//   printf("              ##        ##     ##             ##        ##     ##  ################  \n");
+//   printf("\n\n");
+//}
+// 묵찌빠 - 가위바위보 게임
+//#include <stdio.h>
+//#include <stdlib.h>
+//int choose;
+//int score;
+//int save_input[100] = {0, 1, 2};
+//int random_number(void);
+//void input();
+//void output(int output_num);
+//void comp(int comp_num);
+//void game_end(void);
+//void text (void);
+//
+//
+//int main(void)
+//{
+//    text();
+//    input();
+//
+//    return 0;
+//}
+//
+//void input()
+//{
+//    int box;
+//    while(1){
+//        printf("1. 가위\n2. 바위\n3. 보\n하나를 선택하세요. : ");
+//        scanf("%d", &box);
+//        if (box == 1 || box == 2 || box == 3 ) {
+//            comp(box-1);
+//            break;
+//        }
+//        else {
+//            printf("다른 수를 입력하세요.\n");
+//            continue;
+//        }
+//    }
+//}
+//
+//void comp(int comp_num) { //값 비교
+//    int random = random_number();
+//    int n1 = 0, n2 = 1, n3 = 2;
+//    switch(comp_num) {
+//        case 0:
+//            if(comp_num==random) { score++; output(n1); game_end();}
+//            else if(random==2) {  score++; output(n2); input(); }
+//            else { output(n3); game_end();}
+//            break;
+//        case 1:
+//            if(comp_num==random) { score++; output(n1); game_end();}
+//            else if(random==0) {  score++; output(n2); input(); }
+//            else { output(n3); game_end();}
+//            break;
+//        case 2:
+//            if(comp_num==random) { score++; output(n1); game_end(); }
+//            else if(random==1) {  score++; output(n2); input(); }
+//            else { output(n3); game_end();}
+//            break;
+//    }
+//}
+//
+//
+//void output(int output_num) {
+//    if (output_num == 0) { printf("비겼습니다.\n"); }
+//    else if (output_num == 1) {printf("이겼습니다.\n");}
+//    else { printf("졌습니다.\n"); }
+//    return;
+//}
+//
+//void game_end(void) {
+//    printf("게임이 종료 되었습니다!!!\nTotal Score : %d\n즐겨주셔서 감사합니다!\n", score);
+//}
+//
+//
+//int random_number(void)
+//{
+//    return rand() % 3;
+//}
+//
+//void text (void) {
+//   printf("\n\n");
+//   printf("             ##       #####   ##             ##       #####   ##      ##     ##      \n");
+//   printf("     ######   ##     ##   ##   ##   ##    ##  ##     ##   ##   ##     #########      \n");
+//   printf("         ##   ##      #####    ##   ########  ##      #####    ##     ##     ##      \n");
+//   printf("         ##   ####  #############   ##    ##  ####  #############     #########      \n");
+//   printf("        ##    ##         ##    ##   ########  ##         ##    ##         ##         \n");
+//   printf("              ##        ##     ##             ##        ##     ##  ################  \n");
+//   printf("\n\n");
+//}
+
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int main()
+//{
+//    for (int i = 0; i <10 ; i++) {
+//        printf("랜덤 : %d\n", rand() % 3);
+//    }
+//}
+
+// 묵찌빠 - 가위바위보 게임
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int choose;
+int score;
+int save_input[100] = {0, 1, 2};
+int random_number(void);
+void input(void);
+void output(int output_num);
+void comp(int comp_num);
+void game_end(void);
+void start_text (void);
+
 
 int main(void)
 {
-    int nArr[5] = {1, 9, 4, 5};
-    for (int i = 0; i < 5; i++) {
-        printf("%d ", nArr[i]);
-    }
+    start_text();
+    input();
+
     return 0;
 }
+
+void input(void)
+{
+    int box;
+    while(1){
+        printf("1. 가위\n2. 바위\n3. 보\n하나를 선택하세요. : ");
+        scanf("%d", &box);
+        if (box == 1 || box == 2 || box == 3 ) {
+            comp(box-1);
+            break;
+        }
+        else {
+            printf("다른 수를 입력하세요.\n");
+            continue;
+        }
+    }
+}
+
+void comp(int comp_num) { //값 비교
+    int random = random_number();
+    int n1 = 0, n2 = 1, n3 = 2;
+    switch(comp_num) {
+        case 0:
+            if(comp_num==random) { score++; output(n1); game_end();}
+            else if(random==2) {  score++; output(n2); input(); }
+            else { output(n3); game_end();}
+            break;
+        case 1:
+            if(comp_num==random) { score++; output(n1); game_end();}
+            else if(random==0) {  score++; output(n2); input(); }
+            else { output(n3); game_end();}
+            break;
+        case 2:
+            if(comp_num==random) { score++; output(n1); game_end();}
+            else if(random==1) {  score++; output(n2); input(); }
+            else { output(n3); game_end();}
+            break;
+    }
+}
+
+
+void output(int output_num) {
+    if (output_num == 0) { printf("비겼습니다.\n"); }
+    else if (output_num == 1) {printf("이겼습니다.\n");}
+    else { printf("졌습니다.\n"); }
+    return;
+}
+
+void game_end(void) {
+    printf("게임이 종료 되었습니다!!!\nTotal Score : %d\n즐겨주셔서 감사합니다!\n", score);
+}
+
+
+int random_number(void)
+{
+    srand(time(NULL));
+    return rand() % 3;
+}
+
+void start_text (void) {
+   printf("\n\n");
+   printf("             ##       #####   ##             ##       #####   ##      ##     ##      \n");
+   printf("     ######   ##     ##   ##   ##   ##    ##  ##     ##   ##   ##     #########      \n");
+   printf("         ##   ##      #####    ##   ########  ##      #####    ##     ##     ##      \n");
+   printf("         ##   ####  #############   ##    ##  ####  #############     #########      \n");
+   printf("        ##    ##         ##    ##   ########  ##         ##    ##         ##         \n");
+   printf("              ##        ##     ##             ##        ##     ##  ################  \n");
+   printf("\n\n");
+}
+
