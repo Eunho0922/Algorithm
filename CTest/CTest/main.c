@@ -2616,5 +2616,9 @@ int main()
 
 int main(void)
 {
-    
+    int nArr[5] = {1, 9, 4, 5};
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", nArr[i]);
+    }
+    return 0;
 }
