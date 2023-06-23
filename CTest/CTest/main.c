@@ -3268,6 +3268,7 @@ int game_chance = 3; // 게임 기회를 나타내는 전역변수
 int total_score; // 게임의 전체 점수를 자동으로 0으로 초기화 되는 전역변수
 int save_input[100] = {0, }; // 입력 받은 것을 저장하는 배열
 int inps = 0; // 배열에 몇번째를 나타내는 전역변수
+int count;
 
 int random_number(void); // 초마다 랜덤으로 숫자를 뽑아내는 함수
 void input(void); // 입력받는 함수
