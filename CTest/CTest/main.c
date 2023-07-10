@@ -3447,12 +3447,120 @@ int main()
 //}
 
 //예제4
-#include<stdio.h>
-int main()
-{
-    printf("sizeof(char)   : %d, sizeof(char*)    : %d\n", sizeof(char), sizeof(char*));
-    printf("sizeof(int)    : %d, sizeof(int*)     : %d\n", sizeof(int), sizeof(int*));
-    printf("sizeof(double)  : %d, sizeof(double*)   : %d\n", sizeof(double), sizeof(double*));
-    printf("sizeof(long long) : %d, sizeof(long long*) : %d\n", sizeof(long long), sizeof(long long*));
-    return 0;
-}
+//#include<stdio.h>
+//int main()
+//{
+//    printf("sizeof(char)   : %d, sizeof(char*)    : %d\n", sizeof(char), sizeof(char*));
+//    printf("sizeof(int)    : %d, sizeof(int*)     : %d\n", sizeof(int), sizeof(int*));
+//    printf("sizeof(double)  : %d, sizeof(double*)   : %d\n", sizeof(double), sizeof(double*));
+//    printf("sizeof(long long) : %d, sizeof(long long*) : %d\n", sizeof(long long), sizeof(long long*));
+//    return 0;
+//}
+
+//예제2
+//#include<stdio.h>
+//int main()
+//{
+//    int arr1[3] = { 1, 2, 3 };
+//    double arr2[3] = { 1.1, 2.2, 3.3 };
+//
+//    printf("arr[0] : %d, arr2[0] : %lf\n", arr1[0], arr2[0]);
+//    printf("*arr1 : %d, *arr2 : %lf\n", *arr1, *arr2); // *arr1 == arr1[0], *arr2 == arr2[0]
+//
+//    *arr1 += 100; // *arr1 == arr1[0]
+//    *arr2 += 100.0; //*arr2 == arr2[0]
+//
+//    printf("arr[0] : %d, arr2[0] : %lf\n", arr1[0], arr2[0]);
+//    printf("*arr1 : %d, *arr2 : %lf\n", *arr1, *arr2);
+//    return 0;
+//}
+
+
+//예제3
+
+//#include<stdio.h>
+//int main()
+//{
+//    int a[] = { 10, 20, 30, 40, 50 };
+//    printf("a = %p\n", a);
+//    printf("a + 1 = %p\n", a + 1);
+//    printf("*a = %d\n", *a);
+//    printf("*(a + 1) = %d\n", *(a + 1));
+//
+//    return 0;
+//}
+
+//예제4
+//#include<stdio.h>
+//int main()
+//{
+//    int arr[3] = { 15, 25, 35 };
+//    int* ptr = arr; // int *ptr = &arr[0];과 동일한 문장
+//
+//    printf("   ptr : %p,   arr : %p, &arr[0] : %p\n", ptr, arr, &arr[0]);
+//    printf(" ptr+1 : %p, arr+1 : %p, &arr[1] : %p\n", ptr+1, arr+1, &arr[1]);
+//    printf(" ptr+2 : %p, arr+2 : %p, &arr[2] : %p\n", ptr+2, arr+2, &arr[2]);
+//
+//    printf("\n");
+//
+//    *arr += 5;
+//
+//
+//    printf("arr[0] : %d, ptr[0] : %d, *(ptr+0) : %d\n", arr[0], ptr[0], *(ptr+0));
+//    printf("arr[1] : %d, ptr[1] : %d, *(ptr+1) : %d\n", arr[1], ptr[1], *(ptr+1));
+//    printf("arr[2] : %d, ptr[2] : %d, *(ptr+2) : %d\n", arr[2], ptr[2], *(ptr+2));
+//
+//    return 0;
+//}
+
+// 10 주소
+// 11 주소
+// 11 주소 + 1
+//예제6
+//#include<stdio.h>
+//int main(void)
+//{
+//    int i = 10;
+//    int* pi = &i;
+//
+//    printf("i = %d, pi = %p\n", i, pi);
+//
+//    (*pi)++;
+//
+//    printf("i = %d, pi = %p\n", i, pi);
+//
+//    *pi++;
+//    printf("i = %d, pi = %p\n", i, pi);
+//
+//    return 0;
+//}
+
+// 주소0 주소0
+// 1 2 3 4 5
+// 1 2 3 4 5
+// 1 2 3 4 5
+// 1
+// 주소 1
+//#include<stdio.h>
+//int main(void)
+//{
+//    int i;
+//    int arr[5] = { 1,2,3,4,5 };
+//    int* ptr = arr; // int *ptr = &arr[0];과 동일한 문장
+//    printf("ptr : %p, arr : %p\n", ptr, arr);
+//    for (i = 0; i < 5; i++)
+//        printf("%d ", arr[i]);
+//
+//    printf("\n");
+//    for (i = 0; i < 5; i++)
+//        printf("%d ", *(ptr+i));
+//
+//    printf("\n");
+//    for (i = 0; i < 5; i++)
+//        printf("%d ", *(ptr++));
+//
+//    printf("\n");
+//    printf("*ptr : %d\n", *ptr);
+//    printf("ptr : %p, arr : %p\n", ptr, arr);
+//    return 0;
+//}
