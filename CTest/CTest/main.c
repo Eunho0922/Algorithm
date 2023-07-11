@@ -3540,7 +3540,7 @@ int main()
 // 1 2 3 4 5
 // 1 2 3 4 5
 // 1
-// 주소 1
+// 주소 2
 //#include<stdio.h>
 //int main(void)
 //{
@@ -3564,3 +3564,46 @@ int main()
 //    printf("ptr : %p, arr : %p\n", ptr, arr);
 //    return 0;
 //}
+
+//#include<stdio.h>
+//int main(void)
+//{
+//    int a[] = { 10,20,30,40,50 };
+//    int* p;
+//
+//    p = a;
+//
+//    printf("a[0] = %d a[1] = %d a[2] = %d\n", a[0], a[1], a[2]);
+//    printf("p[0] = %d p[1] = %d p[2] = %d\n", p[0], p[1], p[2]);
+//
+//    p[0] = 60;
+//    p[1] = 70;
+//    p[2] = 80;
+//
+//    printf("a[0] = %d a[1] = %d a[2] = %d\n", a[0], a[1], a[2]);
+//    printf("p[0] = %d p[1] = %d p[2] = %d\n", p[0], p[1], p[2]);
+//    return 0;
+//}
+
+//예제2
+#include<stdio.h>
+void swap(int*, int*);
+int main()
+{
+    int a = 100, b = 200;
+    printf("swap() 호출 전 a = %d b = %d\n", a, b);
+
+    swap(&a, &b);
+
+    printf("swap() 호출 후 a = %d b = %d\n", a, b);
+    return 0;
+}
+
+void swap(int* x, int* y)
+{
+    int tmp;
+    
+    tmp = *x;
+    *x = *y;
+    *y = tmp;
+}
