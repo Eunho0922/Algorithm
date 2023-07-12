@@ -3586,24 +3586,130 @@ int main()
 //}
 
 //예제2
-#include<stdio.h>
-void swap(int*, int*);
-int main()
+//#include<stdio.h>
+//void swap(int*, int*);
+//int main(void)
+//{
+//    int a = 100, b = 200;
+//    printf("swap() 호출 전 a = %d b = %d\n", a, b);
+//
+//    swap(&a, &b);
+//
+//    printf("swap() 호출 후 a = %d b = %d\n", a, b);
+//    return 0;
+//}
+//
+//void swap(int* x, int* y)
+//{
+//    int tmp;
+//    
+//    tmp = *x;
+//    *x = *y;
+//    *y = tmp;
+//}
+
+//#define _CRT_SECURE_NO_WARNINGS
+//#include<stdio.h>
+//void result(int* x, int* y);
+//int main(void)
+//{
+//    int a, b;
+//    printf("두 수를 입력하세요 : ");
+//    scanf("%d %d", &a, &b);
+//
+//    result(&a, &b);
+//    printf("result() 호출 후 %d, %d\n", a, b);
+//    return 0;
+//}
+//void result(int* x, int* y)
+//{
+//    int tmp;
+//    tmp = *x;
+//    printf("%d %d", tmp, *y);
+//    if (tmp >= *y)
+//    {
+//        tmp = *y;
+//        printf("%d %d\n", *y, *x);
+//    }
+//}
+
+//#include <stdio.h>
+//int add(int* num1, int x, int y);
+//int main(void)
+//{
+//    int arr[100], count = 0, a, b;
+//    scanf("%d", &count);
+//    for (int j = 0; j < count; j++) {
+//        scanf("%d", &arr[j]);
+//    }
+//    scanf("%d %d", &a, &b);
+//    printf("%d", add(arr, a, b));
+//}
+//
+//int add(int* num1, int x, int y)
+//{
+//    int tmp = 0;
+//    for (int i = x - 1; i < y; i++) {
+//        tmp += *(num1 + i);
+//    }
+//    return tmp;
+//}
+
+#include <stdio.h>
+int add(int* num1, int x, int y);
+
+int main(void)
 {
-    int a = 100, b = 200;
-    printf("swap() 호출 전 a = %d b = %d\n", a, b);
-
-    swap(&a, &b);
-
-    printf("swap() 호출 후 a = %d b = %d\n", a, b);
-    return 0;
+    int arr[100], size = 0, front_number, back_number;
+    scanf("%d", &size);
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+    scanf("%d %d", &front_number, &back_number);
+    printf("%d\n", add(arr, front_number, back_number));
 }
 
-void swap(int* x, int* y)
+int add(int* ptr, int num1, int num2)
 {
-    int tmp;
-    
-    tmp = *x;
-    *x = *y;
-    *y = tmp;
+    int max = *(ptr + (num1 - 1));
+    int index_num = *(ptr + (num1 - 1));
+    for (int i = num1 - 1; i < num2; i++) {
+        if (max <= *(ptr + (i))) {
+            max = *(ptr + (i));
+            index_num = i;
+        }
+    }
+    return index_num;
 }
+
+
+//#include<stdio.h>
+//#define SIZE 5
+//double get_avg(int* p, int n){
+//    double sum = 0;
+//    for (int i = 0; i < n; i++){
+//        sum += *(p + i);
+//    }
+//    return sum / n;
+//}
+//
+//void check_values(int* num, int n){
+//    for (int i = 0; i < n; i++){
+//        if (*(num + i) == 0)
+//        {
+//            *(num + i) = 0;
+//        }
+//    }
+//}
+//int main(void)
+//{
+//    int i;
+//    int data[5];
+//    for (i = 0; i < SIZE; i++){
+//        printf("값을 입력하시오 : ");
+//        scanf("%d", &data[i]);
+//    }
+//    check_values(data, 5);
+//    printf("값들의 평균 : %.2lf", get_avg(data, 5));
+//    return 0;
+//}
