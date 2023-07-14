@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D14CB4462A61719600471C01 /* BAEKJOON-10172.c in Sources */ = {isa = PBXBuildFile; fileRef = D14CB4452A61719600471C01 /* BAEKJOON-10172.c */; };
 		D174B3A629DC411A00470E65 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D174B3A529DC411A00470E65 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D14CB4452A61719600471C01 /* BAEKJOON-10172.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "BAEKJOON-10172.c"; sourceTree = "<group>"; };
 		D174B3A229DC411A00470E65 /* CTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D174B3A529DC411A00470E65 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				D174B3A529DC411A00470E65 /* main.c */,
+				D14CB4452A61719600471C01 /* BAEKJOON-10172.c */,
 			);
 			path = CTest;
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14CB4462A61719600471C01 /* BAEKJOON-10172.c in Sources */,
 				D174B3A629DC411A00470E65 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

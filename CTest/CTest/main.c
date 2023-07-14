@@ -3655,32 +3655,32 @@ int main()
 //    return tmp;
 //}
 
-#include <stdio.h>
-int add(int* num1, int x, int y);
-
-int main(void)
-{
-    int arr[100], size = 0, front_number, back_number;
-    scanf("%d", &size);
-    for (int i = 0; i < size; i++) {
-        scanf("%d", &arr[i]);
-    }
-    scanf("%d %d", &front_number, &back_number);
-    printf("%d\n", add(arr, front_number, back_number));
-}
-
-int add(int* ptr, int num1, int num2)
-{
-    int max = *(ptr + (num1 - 1));
-    int index_num = *(ptr + (num1 - 1));
-    for (int i = num1 - 1; i < num2; i++) {
-        if (max <= *(ptr + (i))) {
-            max = *(ptr + (i));
-            index_num = i;
-        }
-    }
-    return index_num;
-}
+//#include <stdio.h>
+//int add(int* num1, int x, int y);
+//
+//int main(void)
+//{
+//    int arr[100], size = 0, front_number, back_number;
+//    scanf("%d", &size);
+//    for (int i = 0; i < size; i++) {
+//        scanf("%d", &arr[i]);
+//    }
+//    scanf("%d %d", &front_number, &back_number);
+//    printf("%d\n", add(arr, front_number, back_number));
+//}
+//
+//int add(int* ptr, int num1, int num2)
+//{
+//    int max = *(ptr + (num1 - 1));
+//    int index_num = *(ptr + (num1 - 1));
+//    for (int i = num1 - 1; i < num2; i++) {
+//        if (max <= *(ptr + (i))) {
+//            max = *(ptr + (i));
+//            index_num = i;
+//        }
+//    }
+//    return index_num;
+//}
 
 
 //#include<stdio.h>
