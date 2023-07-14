@@ -12,6 +12,7 @@
 		D14CB44C2A617F3F00471C01 /* 9498.c in Sources */ = {isa = PBXBuildFile; fileRef = D14CB44B2A617F3F00471C01 /* 9498.c */; };
 		D14CB44F2A61802B00471C01 /* 2753.c in Sources */ = {isa = PBXBuildFile; fileRef = D14CB44E2A61802B00471C01 /* 2753.c */; };
 		D14CB4522A61816700471C01 /* 14681.c in Sources */ = {isa = PBXBuildFile; fileRef = D14CB4512A61816700471C01 /* 14681.c */; };
+		D14CB4552A6182F300471C01 /* 2480.c in Sources */ = {isa = PBXBuildFile; fileRef = D14CB4542A6182F300471C01 /* 2480.c */; };
 		D174B3A629DC411A00470E65 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D174B3A529DC411A00470E65 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		D14CB44B2A617F3F00471C01 /* 9498.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 9498.c; sourceTree = "<group>"; };
 		D14CB44E2A61802B00471C01 /* 2753.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 2753.c; sourceTree = "<group>"; };
 		D14CB4512A61816700471C01 /* 14681.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 14681.c; sourceTree = "<group>"; };
+		D14CB4542A6182F300471C01 /* 2480.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 2480.c; sourceTree = "<group>"; };
 		D174B3A229DC411A00470E65 /* CTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D174B3A529DC411A00470E65 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				D14CB44B2A617F3F00471C01 /* 9498.c */,
 				D14CB44E2A61802B00471C01 /* 2753.c */,
 				D14CB4512A61816700471C01 /* 14681.c */,
+				D14CB4542A6182F300471C01 /* 2480.c */,
 			);
 			path = CTest;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 				D14CB4462A61719600471C01 /* BAEKJOON-10172.c in Sources */,
 				D14CB44C2A617F3F00471C01 /* 9498.c in Sources */,
 				D174B3A629DC411A00470E65 /* main.c in Sources */,
+				D14CB4552A6182F300471C01 /* 2480.c in Sources */,
 				D14CB4492A6173DD00471C01 /* 1330.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
