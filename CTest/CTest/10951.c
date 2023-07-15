@@ -3,10 +3,9 @@
 
 int main(void)
 {
-    int a = 1, b = 1;
+    int a, b;
     
-    while (1) {
-        scanf("%d %d", &a, &b);
+    while (scanf("%d %d", &a, &b) != EOF) {
         printf("%d\n", a + b);
     }
     return 0;
