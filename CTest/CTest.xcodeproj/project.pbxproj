@@ -26,6 +26,7 @@
 		D14CB4762A62250300471C01 /* 10952.c in Sources */ = {isa = PBXBuildFile; fileRef = D14CB4752A62250300471C01 /* 10952.c */; };
 		D14CB4792A62250E00471C01 /* 10951.c in Sources */ = {isa = PBXBuildFile; fileRef = D14CB4782A62250E00471C01 /* 10951.c */; };
 		D15447872A63779500BB666B /* 10807.c in Sources */ = {isa = PBXBuildFile; fileRef = D15447862A63779500BB666B /* 10807.c */; };
+		D154478A2A63BF7900BB666B /* 10871.c in Sources */ = {isa = PBXBuildFile; fileRef = D15447892A63BF7900BB666B /* 10871.c */; };
 		D174B3A629DC411A00470E65 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D174B3A529DC411A00470E65 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		D14CB4752A62250300471C01 /* 10952.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 10952.c; sourceTree = "<group>"; };
 		D14CB4782A62250E00471C01 /* 10951.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 10951.c; sourceTree = "<group>"; };
 		D15447862A63779500BB666B /* 10807.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 10807.c; sourceTree = "<group>"; };
+		D15447892A63BF7900BB666B /* 10871.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 10871.c; sourceTree = "<group>"; };
 		D174B3A229DC411A00470E65 /* CTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D174B3A529DC411A00470E65 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 				D14CB4752A62250300471C01 /* 10952.c */,
 				D14CB4782A62250E00471C01 /* 10951.c */,
 				D15447862A63779500BB666B /* 10807.c */,
+				D15447892A63BF7900BB666B /* 10871.c */,
 			);
 			path = CTest;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				D15447872A63779500BB666B /* 10807.c in Sources */,
 				D14CB4612A621D8C00471C01 /* 25304.c in Sources */,
 				D14CB4582A61868E00471C01 /* 2739.c in Sources */,
+				D154478A2A63BF7900BB666B /* 10871.c in Sources */,
 				D174B3A629DC411A00470E65 /* main.c in Sources */,
 				D14CB4552A6182F300471C01 /* 2480.c in Sources */,
 				D14CB46D2A6222D700471C01 /* 11022.c in Sources */,
