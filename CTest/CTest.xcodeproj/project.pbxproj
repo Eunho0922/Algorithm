@@ -32,6 +32,7 @@
 		D15447932A63C3E500BB666B /* 10810.c in Sources */ = {isa = PBXBuildFile; fileRef = D15447922A63C3E500BB666B /* 10810.c */; };
 		D15447962A63C7BB00BB666B /* 10813.c in Sources */ = {isa = PBXBuildFile; fileRef = D15447952A63C7BB00BB666B /* 10813.c */; };
 		D15447992A63CAAD00BB666B /* 5597.c in Sources */ = {isa = PBXBuildFile; fileRef = D15447982A63CAAD00BB666B /* 5597.c */; };
+		D154479C2A63D38100BB666B /* 3052.c in Sources */ = {isa = PBXBuildFile; fileRef = D154479B2A63D38100BB666B /* 3052.c */; };
 		D174B3A629DC411A00470E65 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D174B3A529DC411A00470E65 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		D15447922A63C3E500BB666B /* 10810.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 10810.c; sourceTree = "<group>"; };
 		D15447952A63C7BB00BB666B /* 10813.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 10813.c; sourceTree = "<group>"; };
 		D15447982A63CAAD00BB666B /* 5597.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 5597.c; sourceTree = "<group>"; };
+		D154479A2A63D38100BB666B /* 3052.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 3052.h; sourceTree = "<group>"; };
+		D154479B2A63D38100BB666B /* 3052.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 3052.c; sourceTree = "<group>"; };
 		D174B3A229DC411A00470E65 /* CTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D174B3A529DC411A00470E65 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +94,7 @@
 		D174B39929DC411A00470E65 = {
 			isa = PBXGroup;
 			children = (
+				D154479A2A63D38100BB666B /* 3052.h */,
 				D174B3A429DC411A00470E65 /* CTest */,
 				D174B3A329DC411A00470E65 /* Products */,
 			);
@@ -133,6 +137,7 @@
 				D15447922A63C3E500BB666B /* 10810.c */,
 				D15447952A63C7BB00BB666B /* 10813.c */,
 				D15447982A63CAAD00BB666B /* 5597.c */,
+				D154479B2A63D38100BB666B /* 3052.c */,
 			);
 			path = CTest;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				D154478D2A63C0D600BB666B /* 10818.c in Sources */,
 				D14CB45E2A621B5400471C01 /* 8393.c in Sources */,
 				D14CB4792A62250E00471C01 /* 10951.c in Sources */,
+				D154479C2A63D38100BB666B /* 3052.c in Sources */,
 				D14CB4522A61816700471C01 /* 14681.c in Sources */,
 				D14CB44F2A61802B00471C01 /* 2753.c in Sources */,
 				D14CB4642A621F7100471C01 /* 25314.c in Sources */,
