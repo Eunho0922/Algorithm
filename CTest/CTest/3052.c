@@ -25,4 +25,11 @@ int main(void)
 
     printf("%d", count);
     return 0;
+    
+    
+
+    for (int i = 0; i < 10; i++) {
+        if (arr[i] == 0) { count--; }
+    }
+
 }
