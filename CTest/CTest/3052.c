@@ -31,5 +31,16 @@ int main(void)
     for (int i = 0; i < 10; i++) {
         if (arr[i] == 0) { count--; }
     }
+    for (int i = 0; i < 10; i++) {
+        if (arr[i] == 0) { count--; }
+    }
+
+    
+    for (int i = 0; i < 10; i++) {
+        if (arr[i] == 0) { count--; }
+    }
+    for (int i = 0; i < 10; i++) {
+        if (arr[i] == 0) { count--; }
+    }
 
 }
