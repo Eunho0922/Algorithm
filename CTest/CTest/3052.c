@@ -63,4 +63,21 @@ int main(void)
         }
     }
     printf("%d", max);
+}#include <stdio.h>
+
+int score[10];
+int max;
+
+int main(void)
+{
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &score[i]);
+    }
+    max = score[0];
+    for (int i = 0; i < 10; i++) {
+        if (score[i] >= max) {
+            max = score[i];
+        }
+    }
+    printf("%d", max);
 }
