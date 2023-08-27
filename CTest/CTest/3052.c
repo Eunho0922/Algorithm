@@ -46,38 +46,42 @@
 //}
 
 
-#include <stdio.h>
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//    int x, y;
+//    scanf("%d %d", &x, &y);
+//    int tmp = x;
+//    x = y;
+//    y = x;
+//    printf("%d %d", x, y);
+//}
 
-int score[10];
-int max;
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//    int x, y;
+//    scanf("%d %d", &x, &y);
+//    if (x > y) {
+//        printf("%d\n", x);
+//    } else {
+//        printf("%d\n", y);
+//    }
+//}
 
-int main(void)
-{
-    for (int i = 0; i < 10; i++) {
-        scanf("%d", &score[i]);
-    }
-    max = score[0];
-    for (int i = 0; i < 10; i++) {
-        if (score[i] >= max) {
-            max = score[i];
-        }
-    }
-    printf("%d", max);
-}#include <stdio.h>
-
-int score[10];
-int max;
-
-int main(void)
-{
-    for (int i = 0; i < 10; i++) {
-        scanf("%d", &score[i]);
-    }
-    max = score[0];
-    for (int i = 0; i < 10; i++) {
-        if (score[i] >= max) {
-            max = score[i];
-        }
-    }
-    printf("%d", max);
-}
+//#include <stdio.h>
+//
+//
+//int main(void)
+//{
+//    int n;
+//    int result = 0;
+//    scanf("%d", &n);
+//    for (int i = 1; i <= n; i++) {
+//        result += i;
+//    }
+//    
+//    printf("%d\n", result);
+//}
