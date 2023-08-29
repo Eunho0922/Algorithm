@@ -85,3 +85,57 @@
 //    
 //    printf("%d\n", result);
 //}
+
+
+// 11범 : 2개
+// 12번 : recursive
+//
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//    int input;
+//    int result = 0;
+//    scanf("%d", &input);
+//    for (int i = 1; i <= input; i++) {
+//        result += i;
+//    }
+//    return 0;
+//}
+
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//    int input;
+//    int result = 0;
+//    scanf("%d", &input);
+//    for (int i = 1; i <= input; i++) {
+//        result += (1 / i);
+//    }
+//    return 0;
+//}
+
+// 2
+//
+
+#include <stdio.h>
+
+void hanoi(int n, char start, char mid, char end) {
+    if (n == 0) {
+        return;
+    }
+    
+    hanoi(n-1, start, end, mid);
+    printf("%c -> %c\n", start, end);
+    hanoi(n-1, mid, start, end);
+}
+
+int main(void) {
+    int n;
+    scanf("%d", &n);
+    hanoi(n, 'A', 'B', 'C');
+    
+    return 0;
+}
+
