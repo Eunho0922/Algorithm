@@ -33,7 +33,9 @@
 		D15447962A63C7BB00BB666B /* 10813.c in Sources */ = {isa = PBXBuildFile; fileRef = D15447952A63C7BB00BB666B /* 10813.c */; };
 		D15447992A63CAAD00BB666B /* 5597.c in Sources */ = {isa = PBXBuildFile; fileRef = D15447982A63CAAD00BB666B /* 5597.c */; };
 		D154479C2A63D38100BB666B /* 3052.c in Sources */ = {isa = PBXBuildFile; fileRef = D154479B2A63D38100BB666B /* 3052.c */; };
+		D165CC3E2A9F0529009108AD /* SelectSort.c in Sources */ = {isa = PBXBuildFile; fileRef = D165CC3D2A9F0529009108AD /* SelectSort.c */; };
 		D174B3A629DC411A00470E65 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D174B3A529DC411A00470E65 /* main.c */; };
+		D19890002AA162C9001E5F11 /* 삽입.c in Sources */ = {isa = PBXBuildFile; fileRef = D1988FFF2AA162C9001E5F11 /* 삽입.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,10 +76,12 @@
 		D15447922A63C3E500BB666B /* 10810.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 10810.c; sourceTree = "<group>"; };
 		D15447952A63C7BB00BB666B /* 10813.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 10813.c; sourceTree = "<group>"; };
 		D15447982A63CAAD00BB666B /* 5597.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 5597.c; sourceTree = "<group>"; };
-		D154479A2A63D38100BB666B /* 3052.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 3052.h; sourceTree = "<group>"; };
 		D154479B2A63D38100BB666B /* 3052.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 3052.c; sourceTree = "<group>"; };
+		D165CC3D2A9F0529009108AD /* SelectSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SelectSort.c; sourceTree = "<group>"; };
 		D174B3A229DC411A00470E65 /* CTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D174B3A529DC411A00470E65 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D1988FFE2AA162C9001E5F11 /* 삽입.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "삽입.h"; sourceTree = "<group>"; };
+		D1988FFF2AA162C9001E5F11 /* 삽입.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "삽입.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +98,8 @@
 		D174B39929DC411A00470E65 = {
 			isa = PBXGroup;
 			children = (
-				D154479A2A63D38100BB666B /* 3052.h */,
+				D1988FFE2AA162C9001E5F11 /* 삽입.h */,
+				D1988FFF2AA162C9001E5F11 /* 삽입.c */,
 				D174B3A429DC411A00470E65 /* CTest */,
 				D174B3A329DC411A00470E65 /* Products */,
 			);
@@ -138,6 +143,7 @@
 				D15447952A63C7BB00BB666B /* 10813.c */,
 				D15447982A63CAAD00BB666B /* 5597.c */,
 				D154479B2A63D38100BB666B /* 3052.c */,
+				D165CC3D2A9F0529009108AD /* SelectSort.c */,
 			);
 			path = CTest;
 			sourceTree = "<group>";
@@ -169,7 +175,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					D174B3A129DC411A00470E65 = {
 						CreatedOnToolsVersion = 14.2;
@@ -214,8 +220,10 @@
 				D14CB44C2A617F3F00471C01 /* 9498.c in Sources */,
 				D14CB4762A62250300471C01 /* 10952.c in Sources */,
 				D15447992A63CAAD00BB666B /* 5597.c in Sources */,
+				D19890002AA162C9001E5F11 /* 삽입.c in Sources */,
 				D14CB4702A62234A00471C01 /* 2438.c in Sources */,
 				D15447872A63779500BB666B /* 10807.c in Sources */,
+				D165CC3E2A9F0529009108AD /* SelectSort.c in Sources */,
 				D14CB4612A621D8C00471C01 /* 25304.c in Sources */,
 				D14CB4582A61868E00471C01 /* 2739.c in Sources */,
 				D154478A2A63BF7900BB666B /* 10871.c in Sources */,
@@ -265,6 +273,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -323,6 +332,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -345,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 66Q2NAKW7M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 66Q2NAKW7M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
