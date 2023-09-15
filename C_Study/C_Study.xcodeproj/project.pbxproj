@@ -10,6 +10,7 @@
 		D198900E2AA165F6001E5F11 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D198900D2AA165F6001E5F11 /* main.c */; };
 		D198901B2AA6BFE4001E5F11 /* bubble.c in Sources */ = {isa = PBXBuildFile; fileRef = D198901A2AA6BFE4001E5F11 /* bubble.c */; };
 		D19890462AA840DB001E5F11 /* Shell.c in Sources */ = {isa = PBXBuildFile; fileRef = D19890452AA840DB001E5F11 /* Shell.c */; };
+		D1F579A62AB2AEBD00F09D37 /* quick.c in Sources */ = {isa = PBXBuildFile; fileRef = D1F579A52AB2AEBD00F09D37 /* quick.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		D198900D2AA165F6001E5F11 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		D198901A2AA6BFE4001E5F11 /* bubble.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bubble.c; sourceTree = "<group>"; };
 		D19890452AA840DB001E5F11 /* Shell.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Shell.c; sourceTree = "<group>"; };
+		D1F579A52AB2AEBD00F09D37 /* quick.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				D198900D2AA165F6001E5F11 /* main.c */,
 				D198901A2AA6BFE4001E5F11 /* bubble.c */,
 				D19890452AA840DB001E5F11 /* Shell.c */,
+				D1F579A52AB2AEBD00F09D37 /* quick.c */,
 			);
 			path = C_Study;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19890462AA840DB001E5F11 /* Shell.c in Sources */,
+				D1F579A62AB2AEBD00F09D37 /* quick.c in Sources */,
 				D198900E2AA165F6001E5F11 /* main.c in Sources */,
 				D198901B2AA6BFE4001E5F11 /* bubble.c in Sources */,
 			);
