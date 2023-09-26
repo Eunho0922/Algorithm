@@ -8,13 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D10BF73E29D303FD006AD190 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BF73D29D303FD006AD190 /* main.swift */; };
-		D1A82D6029D2FCCA00E3ADF6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A82D5F29D2FCCA00E3ADF6 /* main.swift */; };
+		D14C88332AC1E26600BD1389 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C88322AC1E26600BD1389 /* main.swift */; };
+		D14C883A2AC1E35A00BD1389 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D14C88392AC1E35A00BD1389 /* RxCocoa */; };
+		D14C883C2AC1E35A00BD1389 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D14C883B2AC1E35A00BD1389 /* RxSwift */; };
 		D1A82D6D29D2FD1600E3ADF6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A82D6C29D2FD1600E3ADF6 /* main.swift */; };
 		D1F1C9312ABD9C050054599F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1C9302ABD9C050054599F /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D10BF73929D303FD006AD190 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D14C882E2AC1E26600BD1389 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -55,8 +66,9 @@
 /* Begin PBXFileReference section */
 		D10BF73B29D303FD006AD190 /* Gogodon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gogodon; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10BF73D29D303FD006AD190 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D14C88302AC1E26600BD1389 /* StudyRxSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StudyRxSwift; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14C88322AC1E26600BD1389 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D1A82D5C29D2FCCA00E3ADF6 /* swiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1A82D5F29D2FCCA00E3ADF6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D1A82D6A29D2FD1600E3ADF6 /* LittleJeongmin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LittleJeongmin; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A82D6C29D2FD1600E3ADF6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D1F1C92E2ABD9C050054599F /* SwiftGrammer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftGrammer; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +80,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14C882D2AC1E26600BD1389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14C883C2AC1E35A00BD1389 /* RxSwift in Frameworks */,
+				D14C883A2AC1E35A00BD1389 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +124,14 @@
 			path = Gogodon;
 			sourceTree = "<group>";
 		};
+		D14C88312AC1E26600BD1389 /* StudyRxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D14C88322AC1E26600BD1389 /* main.swift */,
+			);
+			path = StudyRxSwift;
+			sourceTree = "<group>";
+		};
 		D1A82D5329D2FCCA00E3ADF6 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +139,7 @@
 				D1A82D6B29D2FD1600E3ADF6 /* LittleJeongmin */,
 				D10BF73C29D303FD006AD190 /* Gogodon */,
 				D1F1C92F2ABD9C050054599F /* SwiftGrammer */,
+				D14C88312AC1E26600BD1389 /* StudyRxSwift */,
 				D1A82D5D29D2FCCA00E3ADF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +151,7 @@
 				D1A82D6A29D2FD1600E3ADF6 /* LittleJeongmin */,
 				D10BF73B29D303FD006AD190 /* Gogodon */,
 				D1F1C92E2ABD9C050054599F /* SwiftGrammer */,
+				D14C88302AC1E26600BD1389 /* StudyRxSwift */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +159,6 @@
 		D1A82D5E29D2FCCA00E3ADF6 /* swiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
-				D1A82D5F29D2FCCA00E3ADF6 /* main.swift */,
 			);
 			path = swiftAlgorithm;
 			sourceTree = "<group>";
@@ -167,6 +197,27 @@
 			name = Gogodon;
 			productName = Gogodon;
 			productReference = D10BF73B29D303FD006AD190 /* Gogodon */;
+			productType = "com.apple.product-type.tool";
+		};
+		D14C882F2AC1E26600BD1389 /* StudyRxSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14C88342AC1E26600BD1389 /* Build configuration list for PBXNativeTarget "StudyRxSwift" */;
+			buildPhases = (
+				D14C882C2AC1E26600BD1389 /* Sources */,
+				D14C882D2AC1E26600BD1389 /* Frameworks */,
+				D14C882E2AC1E26600BD1389 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyRxSwift;
+			packageProductDependencies = (
+				D14C88392AC1E35A00BD1389 /* RxCocoa */,
+				D14C883B2AC1E35A00BD1389 /* RxSwift */,
+			);
+			productName = StudyRxSwift;
+			productReference = D14C88302AC1E26600BD1389 /* StudyRxSwift */;
 			productType = "com.apple.product-type.tool";
 		};
 		D1A82D5B29D2FCCA00E3ADF6 /* swiftAlgorithm */ = {
@@ -227,11 +278,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					D10BF73A29D303FD006AD190 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					D14C882F2AC1E26600BD1389 = {
+						CreatedOnToolsVersion = 15.0;
 					};
 					D1A82D5B29D2FCCA00E3ADF6 = {
 						CreatedOnToolsVersion = 14.2;
@@ -253,6 +307,9 @@
 				Base,
 			);
 			mainGroup = D1A82D5329D2FCCA00E3ADF6;
+			packageReferences = (
+				D14C88382AC1E35A00BD1389 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = D1A82D5D29D2FCCA00E3ADF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +318,7 @@
 				D1A82D6929D2FD1600E3ADF6 /* LittleJeongmin */,
 				D10BF73A29D303FD006AD190 /* Gogodon */,
 				D1F1C92D2ABD9C050054599F /* SwiftGrammer */,
+				D14C882F2AC1E26600BD1389 /* StudyRxSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -274,11 +332,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D14C882C2AC1E26600BD1389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14C88332AC1E26600BD1389 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1A82D5829D2FCCA00E3ADF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1A82D6029D2FCCA00E3ADF6 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +383,35 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D14C88352AC1E26600BD1389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D14C88362AC1E26600BD1389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -512,6 +606,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D14C88342AC1E26600BD1389 /* Build configuration list for PBXNativeTarget "StudyRxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14C88352AC1E26600BD1389 /* Debug */,
+				D14C88362AC1E26600BD1389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1A82D5729D2FCCA00E3ADF6 /* Build configuration list for PBXProject "swiftAlgorithm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -549,6 +652,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D14C88382AC1E35A00BD1389 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D14C88392AC1E35A00BD1389 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D14C88382AC1E35A00BD1389 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D14C883B2AC1E35A00BD1389 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D14C88382AC1E35A00BD1389 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1A82D5429D2FCCA00E3ADF6 /* Project object */;
 }

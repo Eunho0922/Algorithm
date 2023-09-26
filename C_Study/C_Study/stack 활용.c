@@ -11,107 +11,107 @@ void init_stack(struct stacks* s) {
     s->top = -1;
 }
 
-//스택과 관련된 함수 모두 작성
 int is_empty(struct stacks *s)
 {
-    if (s->top == -1) {
-        printf("스택이 비어있습니다.");
-        return 1;
-    }
-    return 0;
-
+    return (s->top == -1);
 }
-//구조체 StackType의 멤버 top을 활용하여 포화상태 확인
+
 int is_full(struct stacks *s)
 {
-    if (s->top == MAX_STACK_SIZE - 1) {
-        printf("스택이 가득 찼어요");
-        return 1;
-    }
-    return 0;
-}
-// 삽입함수
-void push(struct stacks *s)
-{
-    if (is_full(s)) {
-        printf("가득 차 있습니다.");
-        return;
-    }
-    s->top += 1;
-    s->stack[s->top] = s;
+    return (s->top == MAX_STACK_SIZE - 1);
 }
 
-int pop(struct stacks *s)
+void push(struct stacks *s, char c)
+{
+    if (is_full(s)) {
+        printf("Stack is full.\n");
+        return;
+    }
+    
+    s->stack[++(s->top)] = c;
+}
+
+char pop(struct stacks *s)
 {
     if (is_empty(s)) {
-        printf("비어있어요");
+        printf("Stack is empty.\n");
+        return '\0';
     }
-    return s->stack[s->top--];
+    
+    return s->stack[(s->top)--];
 }
 
 char peek(struct stacks* s) {
-    if (is_empty(s)) printf("error");
-    else return s->stack[s->top];
+    if (!is_empty(s))
+        return s->stack[s->top];
+    
+    printf("Stack is empty.\n");
+    return '\0';
 }
 
-//연산자 우선순위 결정하는 함수
 int rank(char c) {
-    if ((c == '(') || (c == ')'))
-        return 0;
-    else if ((c == '+') || (c == '-'))
-        return 1;
-    else if ((c == '*') || (c == '/'))
-        return 2;
-    else return -1;
+    switch(c){
+        case '(':
+        case ')':
+            return 0;
+        case '+':
+        case '-':
+            return 1;
+        case '*':
+        case '/':
+            return 2;
+    }
+    
+    return -1;
 }
 
-//중위 -> 후위
-void infix_to_postfix(char* s) {
+
+void infix_to_postfix(char* expr) {
     struct stacks st;
-    char ch, c;
-    int length = strlen(s);
     init_stack(&st);
-    for (int i = 0; i < length; i++) {
+    
+    for(int i = 0; i < strlen(expr); i++) {
+        char ch = expr[i];
         
-        
-        ch = s[i];
-    switch (ch)
-        case '/' :
-        case '*' :
-        case '-' :
-        case '+' :
-            while (rank(peek(s)) >= rank(ch)) {
-                pop(s);
-                printf("%s", s);
-            }
-            push(ch);
-            break;
-        case '(' :
-            push(s);
-            break;
-        case ')' :
-            pop(s);
-            while (peek(s) != '('){
-                printf("%c", s);
-                pop(s);
-            }
-            break;
+        switch(ch){
+            case '+':
+            case '-':
+            case '*':
+            case '/':
+                while(!is_empty(&st) && rank(peek(&st)) >= rank(ch)) {
+                    printf("%c", pop(&st));
+                }
+                push(&st, ch);
+                break;
+                
+            case '(':
+                push(&st, ch);
+                break;
+                
+            case ')':
+                while(!is_empty(&st) && peek(&st) != '(') {
+                    printf("%c", pop(&st));
+                }
+                pop(&st);
+                break;
+                
             default:
                 printf("%c", ch);
-            break;
-
+                break;
+        }
     }
-
-    while (! is_empty(s)) {
-        pop(s);
-        printf("%s" ,s);
+    
+    while(!is_empty(&st)) {
+        printf("%c", pop(&st));
     }
+    
 }
+
 
 int main(void) {
     char* s = "(2+3)*4+9";
-    printf("중위표기수식 %s\n", s);
-    printf("후위표기수식 ");
+    printf("Infix notation: %s\n", s);
+    printf("Postfix notation: ");
     infix_to_postfix(s);
     return 0;
 }
