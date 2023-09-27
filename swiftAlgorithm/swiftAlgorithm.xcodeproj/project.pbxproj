@@ -11,6 +11,8 @@
 		D14C88332AC1E26600BD1389 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C88322AC1E26600BD1389 /* main.swift */; };
 		D14C883A2AC1E35A00BD1389 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D14C88392AC1E35A00BD1389 /* RxCocoa */; };
 		D14C883C2AC1E35A00BD1389 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D14C883B2AC1E35A00BD1389 /* RxSwift */; };
+		D14C88442AC2F4BD00BD1389 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C88432AC2F4BD00BD1389 /* main.swift */; };
+		D14C88492AC2F5FC00BD1389 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D14C88482AC2F5FC00BD1389 /* RxSwift */; };
 		D1A82D6D29D2FD1600E3ADF6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A82D6C29D2FD1600E3ADF6 /* main.swift */; };
 		D1F1C9312ABD9C050054599F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1C9302ABD9C050054599F /* main.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +28,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		D14C882E2AC1E26600BD1389 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D14C883F2AC2F4BD00BD1389 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -68,6 +79,8 @@
 		D10BF73D29D303FD006AD190 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D14C88302AC1E26600BD1389 /* StudyRxSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StudyRxSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14C88322AC1E26600BD1389 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D14C88412AC2F4BD00BD1389 /* RxSwiftCreate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RxSwiftCreate; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14C88432AC2F4BD00BD1389 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D1A82D5C29D2FCCA00E3ADF6 /* swiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A82D6A29D2FD1600E3ADF6 /* LittleJeongmin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LittleJeongmin; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A82D6C29D2FD1600E3ADF6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -89,6 +102,14 @@
 			files = (
 				D14C883C2AC1E35A00BD1389 /* RxSwift in Frameworks */,
 				D14C883A2AC1E35A00BD1389 /* RxCocoa in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14C883E2AC2F4BD00BD1389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14C88492AC2F5FC00BD1389 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +153,14 @@
 			path = StudyRxSwift;
 			sourceTree = "<group>";
 		};
+		D14C88422AC2F4BD00BD1389 /* RxSwiftCreate */ = {
+			isa = PBXGroup;
+			children = (
+				D14C88432AC2F4BD00BD1389 /* main.swift */,
+			);
+			path = RxSwiftCreate;
+			sourceTree = "<group>";
+		};
 		D1A82D5329D2FCCA00E3ADF6 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +169,7 @@
 				D10BF73C29D303FD006AD190 /* Gogodon */,
 				D1F1C92F2ABD9C050054599F /* SwiftGrammer */,
 				D14C88312AC1E26600BD1389 /* StudyRxSwift */,
+				D14C88422AC2F4BD00BD1389 /* RxSwiftCreate */,
 				D1A82D5D29D2FCCA00E3ADF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,6 +182,7 @@
 				D10BF73B29D303FD006AD190 /* Gogodon */,
 				D1F1C92E2ABD9C050054599F /* SwiftGrammer */,
 				D14C88302AC1E26600BD1389 /* StudyRxSwift */,
+				D14C88412AC2F4BD00BD1389 /* RxSwiftCreate */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +249,26 @@
 			);
 			productName = StudyRxSwift;
 			productReference = D14C88302AC1E26600BD1389 /* StudyRxSwift */;
+			productType = "com.apple.product-type.tool";
+		};
+		D14C88402AC2F4BD00BD1389 /* RxSwiftCreate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14C88452AC2F4BD00BD1389 /* Build configuration list for PBXNativeTarget "RxSwiftCreate" */;
+			buildPhases = (
+				D14C883D2AC2F4BD00BD1389 /* Sources */,
+				D14C883E2AC2F4BD00BD1389 /* Frameworks */,
+				D14C883F2AC2F4BD00BD1389 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxSwiftCreate;
+			packageProductDependencies = (
+				D14C88482AC2F5FC00BD1389 /* RxSwift */,
+			);
+			productName = RxSwiftCreate;
+			productReference = D14C88412AC2F4BD00BD1389 /* RxSwiftCreate */;
 			productType = "com.apple.product-type.tool";
 		};
 		D1A82D5B29D2FCCA00E3ADF6 /* swiftAlgorithm */ = {
@@ -287,6 +338,9 @@
 					D14C882F2AC1E26600BD1389 = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					D14C88402AC2F4BD00BD1389 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					D1A82D5B29D2FCCA00E3ADF6 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -319,6 +373,7 @@
 				D10BF73A29D303FD006AD190 /* Gogodon */,
 				D1F1C92D2ABD9C050054599F /* SwiftGrammer */,
 				D14C882F2AC1E26600BD1389 /* StudyRxSwift */,
+				D14C88402AC2F4BD00BD1389 /* RxSwiftCreate */,
 			);
 		};
 /* End PBXProject section */
@@ -337,6 +392,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D14C88332AC1E26600BD1389 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14C883D2AC2F4BD00BD1389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14C88442AC2F4BD00BD1389 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +467,35 @@
 			name = Debug;
 		};
 		D14C88362AC1E26600BD1389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D14C88462AC2F4BD00BD1389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D14C88472AC2F4BD00BD1389 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -615,6 +707,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D14C88452AC2F4BD00BD1389 /* Build configuration list for PBXNativeTarget "RxSwiftCreate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14C88462AC2F4BD00BD1389 /* Debug */,
+				D14C88472AC2F4BD00BD1389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1A82D5729D2FCCA00E3ADF6 /* Build configuration list for PBXProject "swiftAlgorithm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -671,6 +772,11 @@
 			productName = RxCocoa;
 		};
 		D14C883B2AC1E35A00BD1389 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D14C88382AC1E35A00BD1389 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		D14C88482AC2F5FC00BD1389 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D14C88382AC1E35A00BD1389 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
