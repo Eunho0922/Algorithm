@@ -54,17 +54,17 @@ import Foundation
 
 
 
-let  num1 = [1, 2, 3]
-
-
-let observable = Observable<Int>.from(num1)
-
-observable.subscribe(onNext: { event in
-    print(event)
-},
-                     onError: { error in
-    print("error : \(error)")
-},
-                     onCompleted: {
-    print("completed")
-}).dispose()
+//let  num1 = [1, 2, 3]
+//
+//
+//let observable = Observable<Int>.from(num1)
+//
+//observable.subscribe(onNext: { event in
+//    print(event)
+//},
+//                     onError: { error in
+//    print("error : \(error)")
+//},
+//                     onCompleted: {
+//    print("completed")
+//}).dispose()
