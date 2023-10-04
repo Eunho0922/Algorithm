@@ -9,7 +9,7 @@
 //{
 //    s->top = -1;
 //}
-
+//
 //구조체 StackType의 멤버 top을 활용하여 공백상태 확인
 //int is_empty(struct StackType *s)
 //{
@@ -47,7 +47,7 @@
 //    }
 //    return s->data[s->top--];
 //}
-
+//
 //int main(void)
 //{
 //    struct StackType s;  // 스택을 정적으로 생성

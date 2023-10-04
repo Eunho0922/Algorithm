@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D12ECDE62AB948620069F69D /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = D12ECDE52AB948620069F69D /* stack.c */; };
 		D12ECDE92AB960E40069F69D /* struct stack.c in Sources */ = {isa = PBXBuildFile; fileRef = D12ECDE82AB960E10069F69D /* struct stack.c */; };
+		D14C884C2ACD2E9700BD1389 /*  가위바위보.c in Sources */ = {isa = PBXBuildFile; fileRef = D14C884B2ACD2E9500BD1389 /*  가위바위보.c */; };
+		D14C884F2ACD2EE800BD1389 /* 후위연산 계산.c in Sources */ = {isa = PBXBuildFile; fileRef = D14C884E2ACD2EE600BD1389 /* 후위연산 계산.c */; };
 		D198900E2AA165F6001E5F11 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D198900D2AA165F6001E5F11 /* main.c */; };
 		D198901B2AA6BFE4001E5F11 /* bubble.c in Sources */ = {isa = PBXBuildFile; fileRef = D198901A2AA6BFE4001E5F11 /* bubble.c */; };
 		D19890462AA840DB001E5F11 /* Shell.c in Sources */ = {isa = PBXBuildFile; fileRef = D19890452AA840DB001E5F11 /* Shell.c */; };
@@ -32,6 +34,10 @@
 /* Begin PBXFileReference section */
 		D12ECDE52AB948620069F69D /* stack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
 		D12ECDE82AB960E10069F69D /* struct stack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "struct stack.c"; sourceTree = "<group>"; };
+		D14C884A2ACD2E9500BD1389 /*  가위바위보.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = " 가위바위보.h"; sourceTree = "<group>"; };
+		D14C884B2ACD2E9500BD1389 /*  가위바위보.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = " 가위바위보.c"; sourceTree = "<group>"; };
+		D14C884D2ACD2EE600BD1389 /* 후위연산 계산.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "후위연산 계산.h"; sourceTree = "<group>"; };
+		D14C884E2ACD2EE600BD1389 /* 후위연산 계산.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "후위연산 계산.c"; sourceTree = "<group>"; };
 		D198900A2AA165F6001E5F11 /* C_Study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C_Study; sourceTree = BUILT_PRODUCTS_DIR; };
 		D198900D2AA165F6001E5F11 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		D198901A2AA6BFE4001E5F11 /* bubble.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bubble.c; sourceTree = "<group>"; };
@@ -56,6 +62,8 @@
 		D19890012AA165F6001E5F11 = {
 			isa = PBXGroup;
 			children = (
+				D14C884D2ACD2EE600BD1389 /* 후위연산 계산.h */,
+				D14C884A2ACD2E9500BD1389 /*  가위바위보.h */,
 				D1F1C9232ABD10E00054599F /* stack 활용.h */,
 				D198900C2AA165F6001E5F11 /* C_Study */,
 				D198900B2AA165F6001E5F11 /* Products */,
@@ -81,6 +89,8 @@
 				D12ECDE82AB960E10069F69D /* struct stack.c */,
 				D1F941E92ABAAFA500D14B54 /* 개선된 스택.c */,
 				D1F1C9242ABD10E00054599F /* stack 활용.c */,
+				D14C884B2ACD2E9500BD1389 /*  가위바위보.c */,
+				D14C884E2ACD2EE600BD1389 /* 후위연산 계산.c */,
 			);
 			path = C_Study;
 			sourceTree = "<group>";
@@ -142,11 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14C884F2ACD2EE800BD1389 /* 후위연산 계산.c in Sources */,
 				D12ECDE92AB960E40069F69D /* struct stack.c in Sources */,
 				D12ECDE62AB948620069F69D /* stack.c in Sources */,
 				D19890462AA840DB001E5F11 /* Shell.c in Sources */,
 				D1F941EA2ABAB12000D14B54 /* 개선된 스택.c in Sources */,
 				D1F1C9252ABD10E20054599F /* stack 활용.c in Sources */,
+				D14C884C2ACD2E9700BD1389 /*  가위바위보.c in Sources */,
 				D1F579A62AB2AEBD00F09D37 /* quick.c in Sources */,
 				D198900E2AA165F6001E5F11 /* main.c in Sources */,
 				D198901B2AA6BFE4001E5F11 /* bubble.c in Sources */,
