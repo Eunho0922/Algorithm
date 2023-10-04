@@ -6,15 +6,15 @@ import Foundation
 //    let one = 1
 //    let two = 2
 //    let three = 3
-//    
+//
 //    let observable1 = Observable.from(num)
 //    let observable2 = Observable<Int>.just(one)
 //    let observable3 = Observable.of(one, two, three)
 //    let observable4 = Observable.just([one,two, three])
 //    let observable5 = Observable.from([one, two, three])
 //    let observable6 = Observable.of(num)
-//    
-//    
+//
+//
 //    observable1.subscribe(onNext: { event in
 //        print(event)
 //    },
@@ -523,7 +523,7 @@ import Foundation
 //            observer(.failure(JSONError.decodingError))
 //            return Disposables.create()
 //        }
-//        
+//
 //        observer(.success(json))
 //        return Disposables.create()
 //    }
@@ -534,7 +534,7 @@ import Foundation
 //        switch $0 {
 //        case .success(let json):
 //            print(json.name)
-//            
+//
 //        case .failure(let error):
 //            print(error)
 //        }
@@ -586,39 +586,250 @@ import Foundation
 //    }
 //).disposed(by: disposeBag)
 
+//var disposeBag = DisposeBag()
+
+
+//let pubilshSubject = PublishSubject<String>()
+//
+//pubilshSubject.onNext("1. 여러분 안녕하세요?")
+//
+//let 구독자1 = pubilshSubject
+//    .subscribe(onNext: {
+//        print("첫번째 구독자 : \($0)")
+//    })
+//
+//pubilshSubject.onNext("2. 들리세요?")
+//pubilshSubject.on(.next("3. 안들리시나요?"))
+//
+//구독자1.dispose()
+//
+//let 구독자2 = pubilshSubject
+//    .subscribe(onNext: {
+//        print("두번째 구독자 : \($0)")
+//    })
+//
+//pubilshSubject.onNext("4. 여보세요")
+//pubilshSubject.onCompleted()
+//
+//pubilshSubject.onNext("5. 끝났어요")
+//
+//구독자2.dispose()
+//
+//pubilshSubject
+//    .subscribe {
+//        print("세번째 구독자:", $0.element ?? $0)
+//    }
+//    .disposed(by: disposeBag)
+//
+//pubilshSubject.onNext("6. 찍을까요?")
+//enum SubjectError: Error {
+//    case error1
+//}
+//
+//let replaySubject = ReplaySubject<String>.create(bufferSize: 2)
+//
+//replaySubject.onNext("1. 👺")
+//replaySubject.onNext("2. 🌹")
+//replaySubject.onNext("3. 🤓")
+//
+//replaySubject.subscribe {
+//    print("첫번째구독:", $0.element ?? $0)
+//}
+//.disposed(by: disposeBag)
+//
+//replaySubject.onNext("4. 🥸")
+//
+//replaySubject.subscribe {
+//    print("두번째구독:", $0.element ?? $0)
+//}
+//.disposed(by: disposeBag)
+//
+//replaySubject.onNext("4. 🥸")
+//replaySubject.onError(SubjectError.error1)
+//replaySubject.dispose()
+//
+//replaySubject.subscribe {
+//    print("세번째구독:",$0.element ?? $0)
+//}
+//.disposed(by: disposeBag)
+
+//let subject = BehaviorSubject(value: "Initial value")
+//
+//subject.onNext("X")
+//subject.onNext("O")
+//
+//// 5
+//subject
+//    .subscribe{
+//        print("1)", $0)
+//    }
+//    .disposed(by: disposeBag)
+//
+//// 7
+//subject.onNext("X")
+//subject.onError(MyError.anError)
+//
+//// 8
+//subject
+//    .subscribe {
+//        print("2)", $0)
+//    }
+//    .disposed(by: disposeBag)
+
+//let behaviorSubject = BehaviorSubject<String>(value: "0. 초기값")
+//
+//behaviorSubject.onNext("1. 첫번째값")
+//
+//behaviorSubject.subscribe {
+//    print("첫번째 구독:", $0.element ?? $0)
+//}
+//.disposed(by: disposeBag)
+//
+//behaviorSubject.onError(SubjectError.error1)
+//behaviorSubject.onNext("dsfsdf")
+//
+//behaviorSubject.subscribe {
+//    print("두번째구독:",$0.element ?? $0)
+//}
+//.disposed(by: disposeBag)
+//behaviorSubject.onNext("dsfsdf")
+//behaviorSubject.onError(SubjectError.error1)
+//
+//behaviorSubject.subscribe {
+//    print("세번째 구독:",$0.element ?? $0)
+//}.disposed(by: disposeBag)
+//
+//let value = try? behaviorSubject.value()
+//print(value)
+
+//첫번째 구독: 1. 첫번째값
+//두번째구독: 1. 첫번째값
+//Optional("1. 첫번째값")
+
+//let disposeBag = DisposeBag()
+//
+//print("------ignoreElements------")
+//let sleepMode = PublishSubject<String>()
+//
+//sleepMode
+//    .ignoreElements()
+//    .subscribe {
+//        print($0)
+//    }
+//    .disposed(by: disposeBag)
+//
+//sleepMode.onNext("🔈")
+//sleepMode.onNext("🔈")
+//sleepMode.onNext("🔈")
+//
+//sleepMode.onCompleted()
+
+//let disposeBag = DisposeBag()
+//
+//let tooUp = PublishSubject<String>()
+//
+//tooUp
+//    .element(at: 2)
+//    .subscribe(onNext: {
+//        print($0)
+//    })
+//    .disposed(by: disposeBag)
+//
+//tooUp.onNext("🔈") //index0
+//tooUp.onNext("🔈") //index1
+//tooUp.onNext("⭐️") //index2
+//tooUp.onNext("🔈") //index3
+
+//let disposeBag = DisposeBag()
+//
+//Observable.of(1,2,3,4,5,6,7,8,9,10)
+//    .filter { $0 % 2 == 0}
+//    .subscribe(onNext: {
+//        print($0)
+//    })
+//    .disposed(by: disposeBag)
+
+//let disposeBag = DisposeBag()
+
+//Observable.of("🥸","😀","😁","😇","😊","🥺","😃")
+//    .skip(5)
+//    .subscribe(onNext: {
+//        print($0)
+//    })
+//    .disposed(by: disposeBag)
+
+//Observable.of("🥇","🥈","🥉","🤓","😎")
+//    .skip(while: {
+//        $0 != "🥉"
+//    })
+//    .subscribe(onNext: {
+//        print($0)
+//    })
+//    .disposed(by: disposeBag)
+
+
+//기존 observable이 실행되고 그때부터 실행
+//let handsUp = PublishSubject<String>()
+//let handsDown = PublishSubject<String>()
+//
+//handsUp
+//    .take(until: handsDown)
+//    .subscribe(onNext: {
+//        print($0)
+//    })
+//    .disposed(by: disposeBag)
+//
+//handsUp.onNext("🙋‍♀️")
+//handsUp.onNext("🙋")
+//
+//handsDown.onNext("손 내려!")
+//handsUp.onNext("🫡")
+
+//Observable.of("저는","저는","박준하","박준하","박준하","박준하","박준하","입니다","입니다",
+//                            "입니다","입니다","저는","박준하","일까요?","일까요?")
+//    .distinctUntilChanged()
+//    .subscribe(onNext: {
+//        print($0)
+//    })
+//    .disposed(by: disposeBag)
+
+enum MyError: Error {
+    case anError
+}
+
 var disposeBag = DisposeBag()
 
+let publishSubject = PublishSubject<String>()
 
-let pubilshSubject = PublishSubject<String>()
+publishSubject.onNext("1. 이거 나옴? ㅋ")
 
-pubilshSubject.onNext("1. 여러분 안녕하세요?")
-
-let 구독자1 = pubilshSubject
+let user1 = publishSubject
     .subscribe(onNext: {
-        print("첫번째 구독자 : \($0)")
+        print("user 1 : \($0)")
     })
 
-pubilshSubject.onNext("2. 들리세요?")
-pubilshSubject.on(.next("3. 안들리시나요?"))
+publishSubject.onNext("2. 이건 나올걸 ㅋ ✋")
+//publishSubject.onError(MyError.anError)
+publishSubject.onNext("3. 나옴?")
 
-구독자1.dispose()
+user1.dispose()
 
-let 구독자2 = pubilshSubject
+let user2 = publishSubject
     .subscribe(onNext: {
-        print("두번째 구독자 : \($0)")
+        print("user 2 : \($0)")
     })
 
-pubilshSubject.onNext("4. 여보세요")
-pubilshSubject.onCompleted()
+//publishSubject.onCompleted()
+user2.dispose()
 
-pubilshSubject.onNext("5. 끝났어요")
+publishSubject.onNext("sdfsdfsfsdf")                  tlqkf z
 
-구독자2.dispose()
 
-pubilshSubject
-    .subscribe {
-        print("세번째 구독자:", $0.element ?? $0)
-    }
-    .disposed(by: disposeBag)
+let user3 = publishSubject
+    .subscribe(onNext: {
+    print($0)
+    })
 
-pubilshSubject.onNext("6. 찍을까요?")
+//publishSubject.onNext("sdfsdfsfsdf")
+
+user3.dispose()
