@@ -793,43 +793,201 @@ import Foundation
 //    })
 //    .disposed(by: disposeBag)
 
-enum MyError: Error {
-    case anError
-}
+//let subject = PublishSubject<String>()
+//subject.onNext("Hello") // 안나옴
+//
+//let subscribe1 = subject
+//    .subscribe(onNext: {
+//        print("1) \($0)") // 1) 1, 2, 3
+//    })
+//
+//subject.on(.next("1"))
+//subject.onNext("2")
+//
+//let subscribe2 = subject
+//    .subscribe(onNext: {
+//        print("2) \($0)") // 2) 3, 4
+//    })
+//
+//subject.onNext("3")
+//subscribe1.dispose()
+//subject.onNext("4")
+//
+//subject.onCompleted()
+//
+//subject.onNext("5")
+//
+//subscribe2.dispose()
+//
+//let disposeBag = DisposeBag()
+//
+//subject
+//    .subscribe  {
+//        print("3) ", $0.element ?? $0)
+//    }.disposed(by: disposeBag)
+//
+//subject.onNext("?")
 
-var disposeBag = DisposeBag()
 
-let publishSubject = PublishSubject<String>()
 
-publishSubject.onNext("1. 이거 나옴? ㅋ")
+//let subject = PublishSubject<String>()
+//
+//// 2
+//subject.onNext("Is anyone listening?")
+//
+//// 3
+//let subscriptionOne = subject
+//    .subscribe(onNext: { (string) in
+//        print("첫번째 프린드 : \(string)")
+//    })
+//
+//// 4
+//subject.on(.next("1"))
+//
+//// 5
+//subject.onNext("2")
+//
+//subject.onNext("3")
+//
+//subscriptionOne.dispose()
+//
+//subject.onNext("4")
+//
+//let subscriptionTwo = subject.subscribe(onNext: {
+//    print("두번째 프린드 : \($0)")
+//})
+//
+//subject.onNext("5")
 
-let user1 = publishSubject
-    .subscribe(onNext: {
-        print("user 1 : \($0)")
-    })
-
-publishSubject.onNext("2. 이건 나올걸 ㅋ ✋")
-//publishSubject.onError(MyError.anError)
-publishSubject.onNext("3. 나옴?")
-
-user1.dispose()
-
-let user2 = publishSubject
-    .subscribe(onNext: {
-        print("user 2 : \($0)")
-    })
-
+//let disposeBag = DisposeBag()
+//
+//let publishSubject = PublishSubject<String>()
+//
+//let subscribe1 = publishSubject.subscribe(onNext: {
+//    print("1) \($0)")
+//})
+//
+//publishSubject.onNext("안녕하세요")
+//publishSubject.onNext("제 이름은")
+//
+//subscribe1.dispose()
+//
+//publishSubject.onNext("이태영")
+//
+//let subscribe2 = publishSubject.subscribe(onNext: {
+//    print("2) \($0)")
+//})
+//
+//publishSubject.onNext("이은호")
+//publishSubject.onNext("입니다 ㅋ")
+//
+//let subscribe3 = publishSubject.subscribe(onNext: {
+//    print("3) \($0)")
+//})
+//
+//publishSubject.onNext("이제부터 홍진호 메타 할래요")
+//subscribe2.disposed(by: disposeBag)
+//publishSubject.onNext("그냥 안할래요 ㅋ")
+//
+//publishSubject.onNext("사실 할건데 ㅋ")
+//
+//publishSubject.onNext("그럼 안녕히 계세요")
+//
 //publishSubject.onCompleted()
-user2.dispose()
+//
+//subscribe3.dispose()
 
-publishSubject.onNext("sdfsdfsfsdf")                  tlqkf z
+//enum MyError: Error {
+//    case anError
+//
+//}
+//
 
+//var behaviorSubject = BehaviorSubject<String>(value: "비어있음")
+//
+//let s1 = behaviorSubject
+//    .subscribe(onNext: {
+//        print($0)
+//    })
+//
+//var input = Int(readLine()!)
+//
+//if (input! % 2 == 0) {
+//    behaviorSubject.onNext("짝수임")
+//} else {
+//    behaviorSubject.onNext("홀수임")
+//}
+//
+//behaviorSubject.onNext("ㄱㅅ")
+//
+//s1.dispose()
 
-let user3 = publishSubject
+//let subject = ReplaySubject<String>.create(bufferSize: 2)
+//let disposeBag = DisposeBag()
+//
+//// 2
+//subject.onNext("1")
+//subject.onNext("2")
+//subject.onNext("3")
+//
+//// 3
+//
+//let s1 = subject
+//    .subscribe(onNext: {
+//        print("1) \($0)")
+//    })
+//
+//subject.onNext("4")
+//
+//
+//
+//subject.onNext("5")
+//
+//let s2 = subject
+//    .subscribe(onNext: {
+//        print("2) \($0)")
+//    })
+//
+//subject.onNext("6")
+//
+//s1.dispose()
+//s2.dispose()
+
+//enum SubjectError:Error {
+//    case error1
+//}
+//
+//var disposeBag = DisposeBag()
+//
+//let replaySubject = ReplaySubject<String>.create(bufferSize: 2)
+//
+//replaySubject.onNext("1. 👺")
+//replaySubject.onNext("2. 🌹")
+//replaySubject.onNext("3. 🤓")
+//
+//replaySubject.subscribe {
+//    print("첫번째구독 : ", $0.element ?? $0)
+//}
+//.disposed(by: disposeBag)
+//
+//replaySubject.subscribe {
+//    print("두번째구독 : ", $0.element ?? $0)
+//}
+//.disposed(by: disposeBag)
+//
+//replaySubject.onNext("4. 🥸")
+//replaySubject.onError(SubjectError.error1)
+//replaySubject.dispose()
+//
+//replaySubject.subscribe {
+//    print("세번째구독 : ",$0.element ?? $0)
+//}.dispose()
+
+let behaviorSubject = BehaviorSubject<String>(value: "초기값")
+
+let disposeBag = DisposeBag()
+
+let s1 = behaviorSubject
     .subscribe(onNext: {
-    print($0)
+        print($0)
     })
-
-//publishSubject.onNext("sdfsdfsfsdf")
-
-user3.dispose()
