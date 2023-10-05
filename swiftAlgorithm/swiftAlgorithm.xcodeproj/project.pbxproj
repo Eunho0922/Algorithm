@@ -153,12 +153,12 @@
 			path = StudyRxSwift;
 			sourceTree = "<group>";
 		};
-		D14C88422AC2F4BD00BD1389 /* RxSwiftCreate */ = {
+		D14C88422AC2F4BD00BD1389 /* RxSwiftObservable */ = {
 			isa = PBXGroup;
 			children = (
 				D14C88432AC2F4BD00BD1389 /* main.swift */,
 			);
-			path = RxSwiftCreate;
+			path = RxSwiftObservable;
 			sourceTree = "<group>";
 		};
 		D1A82D5329D2FCCA00E3ADF6 = {
@@ -169,7 +169,7 @@
 				D10BF73C29D303FD006AD190 /* Gogodon */,
 				D1F1C92F2ABD9C050054599F /* SwiftGrammer */,
 				D14C88312AC1E26600BD1389 /* StudyRxSwift */,
-				D14C88422AC2F4BD00BD1389 /* RxSwiftCreate */,
+				D14C88422AC2F4BD00BD1389 /* RxSwiftObservable */,
 				D1A82D5D29D2FCCA00E3ADF6 /* Products */,
 			);
 			sourceTree = "<group>";
