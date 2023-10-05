@@ -90,7 +90,7 @@
 //observable
 //    .subscribe(onNext: {
 //        print($0)
-//        
+//
 //    }, onCompleted: {
 //        print("Completed")
 //    }).disposed(by: disposeBag)
@@ -106,7 +106,7 @@
 //observable
 //    .subscribe(onNext: {
 //        print($0)
-//        
+//
 //    }, onCompleted: {
 //        print("Completed")
 //    }).disposed(by: disposeBag)
@@ -151,4 +151,32 @@
 
 //---------------------------------------------------------------Observable .create()---------------------------------------------------------------------------------------------
 // ✨ observable .create() 코드 ✨
+import RxSwift
+import Foundation
 
+//var disposeBag = DisposeBag()
+//
+//Observable.create { observer -> Disposable in
+//    observer.onNext(1)
+//    observer.on(.next(2))
+//    observer.onCompleted()
+//    observer.on(.next(3))
+//    return Disposables.create()
+//}
+//.subscribe(onNext: {
+//    print($0)
+//})
+//.disposed(by: disposeBag)
+
+let disposeBag = DisposeBag()
+
+Observable.create { observer -> Disposable in
+        observer.onNext(1)
+        observer.onCompleted()
+        observer.on(.next(2))
+        return Disposables.create()
+}
+.subscribe {
+            print($0)
+}
+.disposed(by: disposeBag)
