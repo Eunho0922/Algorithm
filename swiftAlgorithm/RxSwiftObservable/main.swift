@@ -151,8 +151,8 @@
 
 //---------------------------------------------------------------Observable .create()---------------------------------------------------------------------------------------------
 // ✨ observable .create() 코드 ✨
-import RxSwift
-import Foundation
+//import RxSwift
+//import Foundation
 
 //var disposeBag = DisposeBag()
 //
@@ -168,15 +168,15 @@ import Foundation
 //})
 //.disposed(by: disposeBag)
 
-let disposeBag = DisposeBag()
-
-Observable.create { observer -> Disposable in
-        observer.onNext(1)
-        observer.onCompleted()
-        observer.on(.next(2))
-        return Disposables.create()
-}
-.subscribe {
-            print($0)
-}
-.disposed(by: disposeBag)
+//let disposeBag = DisposeBag()
+//
+//Observable.create { observer -> Disposable in
+//        observer.onNext(1)
+//        observer.onCompleted()
+//        observer.on(.next(2))
+//        return Disposables.create()
+//}
+//.subscribe {
+//            print($0)
+//}
+//.disposed(by: disposeBag)
