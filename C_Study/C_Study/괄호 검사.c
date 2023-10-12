@@ -49,42 +49,31 @@
 //
 //    for (int i = 0; i < length; i++) {
 //        ch = c[i];
-//
-//        if (ch == '(' || ch == '{' || ch == '[') {
-//            push(&st, ch);
-//        } else {
-//            if (pop(&st) == ch) {
-//                continue;
-//            }
+//        switch (ch) {
+//            case '(': case '{': case '[':
+//                push(&st, ch);
+//                break;
+//            case ')':
+//                if (pop(&st) == '(') {
+//                    break;
+//                } else {
+//                    return 0;
+//                }
+//            case '}':
+//                if (pop(&st) == '{') {
+//                    break;
+//                } else {
+//                    return 0;
+//                }
+//            case ']':
+//                if (pop(&st) == '[') {
+//                    break;
+//                } else {
+//                    return 0;
+//                }
+//            default:
+//                break;
 //        }
-//            return 0;
-////        switch (ch) {
-////            case '(':
-////            case '{':
-////            case '[':
-////                push(&st, ch);
-////                break;
-////            case ')':
-////                if (pop(&st) == '(') {
-////                    break;
-////                } else {
-////                    return 0;
-////                }
-////            case '}':
-////                if (pop(&st) == '{') {
-////                    break;
-////                } else {
-////                    return 0;
-////                }
-////            case ']':
-////                if (pop(&st) == '[') {
-////                    break;
-////                } else {
-////                    return 0;
-////                }
-////            default:
-////                break;
-////        }
 //    }
 //    if (is_empty(&st)) {
 //        return 1;
