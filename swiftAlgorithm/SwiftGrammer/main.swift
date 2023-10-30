@@ -155,13 +155,13 @@
 //print(names.count)
 
 
-var names: Array<String> = ["eunho", "tyler", "hyunsu", "junghyun"]
-print(names[2])
-
-names.append("swift")
-names.append(contentsOf: ["sdfsdf", "asdfasdf"])
-
-names.insert("happpy", at: 2)
-names.insert(contentsOf: ["12345", "45678"], at: 5)
+//var names: Array<String> = ["eunho", "tyler", "hyunsu", "junghyun"]
+//print(names[2])
+//
+//names.append("swift")
+//names.append(contentsOf: ["sdfsdf", "asdfasdf"])
+//
+//names.insert("happpy", at: 2)
+//names.insert(contentsOf: ["12345", "45678"], at: 5)
 
 
