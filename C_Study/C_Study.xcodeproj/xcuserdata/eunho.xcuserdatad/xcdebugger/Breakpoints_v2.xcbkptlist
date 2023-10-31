@@ -3,4 +3,22 @@
    uuid = "BB9A891F-C6DD-447E-8CF9-00F4944293C7"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA23B954-FBA3-43E1-99D5-4463AB571339"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "C_Study/&#x1107;&#x1162;&#x110b;&#x1167;&#x11af; &#x1105;&#x1175;&#x1109;&#x1173;&#x1110;&#x1173;.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

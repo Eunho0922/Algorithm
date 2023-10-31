@@ -165,3 +165,62 @@
 //names.insert(contentsOf: ["12345", "45678"], at: 5)
 
 
+//enum Asia:String {
+//case korea = "대한민국"
+//case japan = "ㄴㅇㄹㄴㅇㄹ"
+//case china = "ㄴㅇㄹㄴㅇㄹsdf"
+//}
+//
+//let myCountry = Asia.korea.rawValue
+//
+//print(myCountry)
+
+enum Asia:String {
+    case korea = "대한민국"
+    case china = "중국"
+    case japan = "일본"
+}
+
+enum America {
+    case usa
+    case canada
+    case mexico
+}
+
+enum Africa {
+    case libya
+    case egypt
+    case ethiopia
+}
+
+enum Europe {
+    case france
+    case italy
+    case germay
+}
+
+enum Oceania {
+    case australia
+    case newzealand
+    case solomon
+}
+
+
+enum Earth{
+    case Asia(country:Asia)
+    case America(country:America)
+    case Africa(country:Africa)
+    case Europe(country:Europe)
+    case Oceania(country:Oceania)
+}
+
+var earth = Earth.America(country: .usa)
+
+switch earth {
+case .Asia(let country):
+    print(country.rawValue)
+case .America(let country):
+    print(country)
+default:
+    print("default")
+}

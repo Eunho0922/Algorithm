@@ -21,6 +21,7 @@
 		D198900E2AA165F6001E5F11 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D198900D2AA165F6001E5F11 /* main.c */; };
 		D198901B2AA6BFE4001E5F11 /* bubble.c in Sources */ = {isa = PBXBuildFile; fileRef = D198901A2AA6BFE4001E5F11 /* bubble.c */; };
 		D19890462AA840DB001E5F11 /* Shell.c in Sources */ = {isa = PBXBuildFile; fileRef = D19890452AA840DB001E5F11 /* Shell.c */; };
+		D1A7AA652AF0A48E00B04753 /* 단순 연결 리스트.c in Sources */ = {isa = PBXBuildFile; fileRef = D1A7AA642AF0A48C00B04753 /* 단순 연결 리스트.c */; };
 		D1A81DBF2AD3BA8D00E99A3B /* 선택 정렬.c in Sources */ = {isa = PBXBuildFile; fileRef = D1A81DBE2AD3B19F00E99A3B /* 선택 정렬.c */; };
 		D1A81DC22AD4B79E00E99A3B /* 삽입 정렬.c in Sources */ = {isa = PBXBuildFile; fileRef = D1A81DC12AD4B79E00E99A3B /* 삽입 정렬.c */; };
 		D1BE07832ACF845800DDAD0F /* 괄호 검사.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BE07822ACF844E00DDAD0F /* 괄호 검사.c */; };
@@ -60,6 +61,8 @@
 		D198900D2AA165F6001E5F11 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		D198901A2AA6BFE4001E5F11 /* bubble.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bubble.c; sourceTree = "<group>"; };
 		D19890452AA840DB001E5F11 /* Shell.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Shell.c; sourceTree = "<group>"; };
+		D1A7AA632AF0A48C00B04753 /* 단순 연결 리스트.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "단순 연결 리스트.h"; sourceTree = "<group>"; };
+		D1A7AA642AF0A48C00B04753 /* 단순 연결 리스트.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "단순 연결 리스트.c"; sourceTree = "<group>"; };
 		D1A81DBE2AD3B19F00E99A3B /* 선택 정렬.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "선택 정렬.c"; sourceTree = "<group>"; };
 		D1A81DC12AD4B79E00E99A3B /* 삽입 정렬.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "삽입 정렬.c"; sourceTree = "<group>"; };
 		D1BE07822ACF844E00DDAD0F /* 괄호 검사.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "괄호 검사.c"; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 		D19890012AA165F6001E5F11 = {
 			isa = PBXGroup;
 			children = (
+				D1A7AA632AF0A48C00B04753 /* 단순 연결 리스트.h */,
 				D198771C2AE0A25C003D7EB5 /* 스택(stack)_복습.h */,
 				D19877192ADFA87D003D7EB5 /* 배열 리스트.h */,
 				D19429E02ADE278800BBF76A /* 덱.h */,
@@ -121,6 +125,7 @@
 				D19429E12ADE278800BBF76A /* 덱.c */,
 				D198771A2ADFA87D003D7EB5 /* 배열 리스트.c */,
 				D198771D2AE0A25C003D7EB5 /* 스택(stack)_복습.c */,
+				D1A7AA642AF0A48C00B04753 /* 단순 연결 리스트.c */,
 			);
 			path = C_Study;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				D1F1C9252ABD10E20054599F /* stack 활용.c in Sources */,
 				D14C884C2ACD2E9700BD1389 /*  가위바위보.c in Sources */,
 				D198771B2ADFA888003D7EB5 /* 배열 리스트.c in Sources */,
+				D1A7AA652AF0A48E00B04753 /* 단순 연결 리스트.c in Sources */,
 				D198771E2AE0A25E003D7EB5 /* 스택(stack)_복습.c in Sources */,
 				D19429E22ADE278800BBF76A /* 덱.c in Sources */,
 				D1F579A62AB2AEBD00F09D37 /* quick.c in Sources */,
