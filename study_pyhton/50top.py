@@ -10,8 +10,4 @@
 #             k -= 1 
 #         print()
 #         if num > limit:
-#             break
-
-# print_numbers(27)
-
-bool a = true
+#             breakrs(2
