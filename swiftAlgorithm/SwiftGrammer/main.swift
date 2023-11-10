@@ -230,3 +230,26 @@
 //    print("Hello, \(name)!")
 //}
 
+//typealias StringIntDictionary = [String: Int]
+//
+//var numberForName: Dictionary<String, Int> = Dictionary<String, Int>()
+//
+//var numberForName1: [String: Int] = [String: Int]()
+//
+//var numberForName2: StringIntDictionary = StringIntDictionary()
+//
+//var numberForName3: [String: Int] = [:]
+//
+//var numberForName4: [String: Int] = ["yagom": 100, "chulsoo": 200, "jenny": 300]
+//
+//print(numberForName4.count)
+//print(numberForName4)
+
+import Foundation
+
+var numbers = [0, 1, 2, 3 ,4]
+(0..<5).forEach({ index in
+    DispatchQueue.main.async {
+        print(numbers[index])
+    }
+})
