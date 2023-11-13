@@ -245,11 +245,26 @@
 //print(numberForName4.count)
 //print(numberForName4)
 
-import Foundation
+//import Foundation
+//
+//var numbers = [0, 1, 2, 3 ,4]
+//(0..<5).forEach({ index in
+//    DispatchQueue.main.async {
+//        print(numbers[index])
+//    }
+//})
 
-var numbers = [0, 1, 2, 3 ,4]
-(0..<5).forEach({ index in
-    DispatchQueue.main.async {
-        print(numbers[index])
-    }
-})
+//import Foundation
+//
+//var _myProperty: Int
+//var myProperty: Int {
+//   get {
+//      return _myProperty
+//   }
+//   set(newVal) {
+//      _myProperty = newVal
+//   }
+//}
+//
+//print(myProperty);
+
