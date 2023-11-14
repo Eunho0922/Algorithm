@@ -4,13 +4,13 @@
 //int main(void) {
 //    int a;
 //    cin >> a;
-//    
+//
 //    stack<int> stk;
-//    
+//
 //    for (int i = 1; i <= a ; i++) {
 //        string input;
 //        cin >> input;
-//        
+//
 //        if (input == "push") {
 //            int num;
 //            cin >> num;
@@ -41,15 +41,15 @@
 //using namespace std;
 //
 //int main(void) {
-//    
+//
 //    ios_base::sync_with_stdio(false);
 //    cin.tie(NULL);
-//    
+//
 //    int N;
 //    cin >> N;
-//    
+//
 //    stack<int> stk;
-//    
+//
 //    for (int i = 1; i <= N; i++) {
 //        int num;
 //        cin >> num;
@@ -91,12 +91,12 @@
 //int main(void) {
 //    ios_base::sync_with_stdio();
 //    cin.tie(NULL);
-//    
+//
 //    stack<int> stk;
-//    
+//
 //    int K;
 //    cin >> K;
-//    
+//
 //    for (int i = 0; i < K; i++) {
 //        int num;
 //        cin >> num;
@@ -106,13 +106,13 @@
 //            stk.push(num);
 //        }
 //    }
-//    
+//
 //    int result = 0;
 //    while (!stk.empty()) {
 //        result += stk.top();
 //        stk.pop();
 //    }
-//    
+//
 //    cout << result;
 //}
 
@@ -131,21 +131,21 @@ int main(void) {
     
     for (int i = 0; i < T; i++) {
         bool VSP = true;
-
+        
         string str;
         cin >> str;
+        
         for (int j = 0;j < str.length(); j++) {
             if (str[j] == '(') {
                 stk.push(str[j]);
+            } else if (!stk.empty() && str[j] == ')' && stk.top() == '(') {
+                stk.pop();
             } else {
-                if (!stk.empty() && str[j] == ')' && stk.top() == '(') {
-                    stk.pop();
-                } else {
-                    VSP = false;
-                    break;
-                }
+                VSP = false;
+                break;
             }
         }
+        
         if (!stk.empty()) {
             VSP = false;
         }
@@ -155,6 +155,5 @@ int main(void) {
         } else {
             cout << "YES\n";
         }
-        
     }
 }
