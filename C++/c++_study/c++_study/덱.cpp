@@ -4,16 +4,16 @@ using namespace std;
 int main(void) {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    
+
     int input;
     cin >> input;
-    
+
     deque<int>(deq);
-    
+
     for (int i = 0; i< input; i++) {
         int command;
         cin >> command;
-        
+
         if (command == 1) {
             int X;
             cin >> X;
