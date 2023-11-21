@@ -74,3 +74,16 @@
 //    
 //    return 0;
 //}
+
+//#include <stdio.h>
+//
+//void increase(int n){
+//    n = n + 1;
+//}
+//
+//int main() {
+//    int n = 10;
+//    increase(n);
+//    printf("%n", n);
+//    return 0;
+//}

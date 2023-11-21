@@ -1271,3 +1271,29 @@ import Foundation
 //    // 5
 //    subject.onNext("2")        //Print: 2
 //}
+
+//let disposeBag = DisposeBag()
+//
+//public static func timer(_ dueTime: RxTimeInterval, period: RxTimeInterval? = nil, scheduler: SchedulerType) -> Observable<Element> {
+//    return Timer(
+//        dueTime: dueTime,
+//        period: period,
+//        scheduler: scheduler
+//    )
+//}
+//
+//Observable<Int>
+//    .timer(.seconds(1), period: .seconds(1), scheduler: MainScheduler.instance)
+//    .subscribe { print($0) }
+//    .disposed(by: disposeBag)
+
+
+//let observable = Observable<Int>
+//                      .interval(.seconds(1), scheduler: MainScheduler.instance)
+//                      .subscribe { print($0) }
+                      
+// 직접 해제시켜야함
+//DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+//    observable.dispose()
+//}
+
