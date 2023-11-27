@@ -6,6 +6,8 @@ struct TreeNode {
     struct TreeNode *left, *right;
 };
 
+
+
 struct TreeNode n1 = { 4, NULL, NULL };
 struct TreeNode n2 = { 5, NULL, NULL };
 struct TreeNode n3 = { 6, NULL, NULL };
@@ -37,7 +39,7 @@ void postorder1(struct TreeNode* root) {
         postorder1(root->left);
         postorder1(root->right);
         printf("%d ", root->data);
-    }   
+    }
     return;
 }
 
