@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D140D8E42B162AF800585AE7 /* 1546.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D140D8E22B162AE900585AE7 /* 1546.cpp */; };
 		D16F613B2B00FFBC00E927BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D16F613A2B00FFBC00E927BD /* main.cpp */; };
 		D191A7A82B13FF80009B3145 /* 10811.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D191A7A62B13FF77009B3145 /* 10811.cpp */; };
 		D1C1C8372B0360B800F6F328 /* 괄호검사.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1C1C8352B0360B800F6F328 /* 괄호검사.cpp */; };
@@ -40,6 +41,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D140D8E22B162AE900585AE7 /* 1546.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1546.cpp; sourceTree = "<group>"; };
+		D140D8E32B162AE900585AE7 /* 1546.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = 1546.hpp; sourceTree = "<group>"; };
 		D16F61372B00FFBC00E927BD /* c++_study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c++_study"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16F613A2B00FFBC00E927BD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D191A7A32B13FF66009B3145 /* 10811.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 10811.h; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 		D16F612E2B00FFBC00E927BD = {
 			isa = PBXGroup;
 			children = (
+				D140D8E32B162AE900585AE7 /* 1546.hpp */,
 				D191A7A72B13FF77009B3145 /* 10811.hpp */,
 				D191A7A32B13FF66009B3145 /* 10811.h */,
 				D1FD2BB62B0E2D390012128D /* 별.hpp */,
@@ -117,6 +121,7 @@
 				D1C1C85B2B0A3DB000F6F328 /* 2522.cpp */,
 				D1FD2BB52B0E2D390012128D /* 별.cpp */,
 				D191A7A62B13FF77009B3145 /* 10811.cpp */,
+				D140D8E22B162AE900585AE7 /* 1546.cpp */,
 			);
 			path = "c++_study";
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				D1C1C8372B0360B800F6F328 /* 괄호검사.cpp in Sources */,
 				D1C1C85D2B0A3DB000F6F328 /* 2522.cpp in Sources */,
 				D1FD2BB72B0E2D390012128D /* 별.cpp in Sources */,
+				D140D8E42B162AF800585AE7 /* 1546.cpp in Sources */,
 				D1C1C83D2B04374A00F6F328 /* 4949.cpp in Sources */,
 				D1C1C8542B07524600F6F328 /* 2558.cpp in Sources */,
 				D191A7A82B13FF80009B3145 /* 10811.cpp in Sources */,
