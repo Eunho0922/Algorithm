@@ -1,5 +1,42 @@
 import RxSwift
 import Foundation
+//
+//let disposeBag = DisposeBag()
+//
+//let one = 1
+//let two = 2
+//let three = 3
+//
+//let observable: Observable<Array> = Observable<Array>.just([one, two, three])
+//let observable1 = Observable.just([one, two, three])
+//
+////let observable:Observable<Int> = Observable<Int>.of(one, two, three)
+//
+//observable.subscribe(onNext: { item in
+//    print(item)
+//}, onError: { error in
+//    print(error)
+//}, onCompleted: {
+//    print("completed")
+//}
+//).disposed(by: disposeBag)
+
+//let disposeBag = DisposeBag()
+//let observable = Observable<String>.create({ (observer) -> Disposable in
+//    
+//    observer.onNext("1")
+//    
+//    observer.onNext("2")
+//
+//    observer.onCompleted()
+//    observer.onNext("?")
+//    return Disposables.create()
+//    
+//})
+//
+//observable.subscribe(onNext: {(event) in
+//    print(event)
+//}).disposed(by: disposeBag)
 
 
 //example(of: "just, of, from") {
@@ -1298,3 +1335,17 @@ import Foundation
 //    observable.dispose()
 //}
 
+let disposBag = DisposeBag()
+print("시작 : \\(Date())")
+Observable<Int>.timer(.seconds(1), period: .milliseconds(200), scheduler: MainScheduler.instance)
+    .take(20)
+    .subscribe { elem in
+        print("Next", elem)
+    } onError: { error in
+        print("Error", error)
+    } onCompleted: {
+        print("onCompleted")
+    } onDisposed: {
+        print("Disposed 끝 : \\(Date())")
+    }
+    .disposed(by: disposBag)
