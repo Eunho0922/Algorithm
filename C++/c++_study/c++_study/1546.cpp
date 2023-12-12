@@ -61,25 +61,25 @@
 //    }
 //}
 
-#include <bits/stdc++.h>
-using namespace std;
-
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-
-    int n;
-    char ch;
-    
-    cin >> n;
-    
-    int total = 0;
-
-    for (int i = 0; i < n; i++) {
-        cin >> ch;
-        total += ch - 48;
-    }
-    
-    cout << total << endl;
-}
+//#include <bits/stdc++.h>
+//using namespace std;
+//
+//int main() {
+//    ios_base::sync_with_stdio(false);
+//    cin.tie(NULL);
+//    cout.tie(NULL);
+//
+//    int n;
+//    char ch;
+//    
+//    cin >> n;
+//    
+//    int total = 0;
+//
+//    for (int i = 0; i < n; i++) {
+//        cin >> ch;
+//        total += ch - 48;
+//    }
+//    
+//    cout << total << endl;
+//}

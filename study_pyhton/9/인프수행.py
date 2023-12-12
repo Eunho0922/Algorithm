@@ -52,26 +52,26 @@
 
 
 
-import random
+# import random
 
-def grade(score):
-    if score >= 90:
-        return 'A'
-    elif score >= 80:
-        return 'B'
-    elif score >= 70:
-        return 'C'
-    elif score >= 60:
-        return 'D'
-    else:
-        return 'E'
+# def grade(score):
+#     if score >= 90:
+#         return 'A'
+#     elif score >= 80:
+#         return 'B'
+#     elif score >= 70:
+#         return 'C'
+#     elif score >= 60:
+#         return 'D'
+#     else:
+#         return 'E'
 
-scores = [random.randint(1, 100) for i in range(200)]
-grades = [grade(i) for i in scores]
+# scores = [random.randint(1, 100) for i in range(200)]
+# grades = [grade(i) for i in scores]
 
-with open("sosu.dat", 'w') as f:
-    for scores, grades in zip(scores, grades):
-        f.write(f'score : {scores}, grade : {grades}\n')
+# with open("sosu.dat", 'w') as f:
+#     for scores, grades in zip(scores, grades):
+#         f.write(f'score : {scores}, grade : {grades}\n')
 
 # with open('grade333s.txt', 'w') as f:
 #     for scores, grades in zip(scores, grades):
@@ -188,26 +188,26 @@ with open("sosu.dat", 'w') as f:
 #     print(str(year) + "년은 평년입니다.")
 
 # 7️⃣ 정규식
-# import re4
+import re
 
-# def find_words_with_b(sentence):
-#     words_with_b = re.findall(r'\b\w*b\w*\b', sentence, re.I)
-#     return words_with_b, len(words_with_b)
+def find_words_with_b(sentence):
+        words_with_b = re.findall(r'\b\w*b\w*\b', sentence, re.I)
+        return words_with_b, len(words_with_b)
 
-# sentence = "This is a test sentence with some words containing i love boy 'b'."
-# words_with_b, count = find_words_with_b(sentence)
+sentence = "This is a test sentence with some words containing i love boy 'b'."
+words_with_b, count = find_words_with_b(sentence)
 
-# print(f"'b'가 포함된 단어들: {words_with_b}")
-# print(f"'b'가 포함된 단어의 수: {count}")
+print(f"'b'가 포함된 단어들: {words_with_b}")
+print(f"'b'가 포함된 단어의 수: {count}")
 
-# def find_word_b(sentence):
-#     findWord = re.findall(r'\b\w*b\w*\b', sentence, re.I)
-#     return findWord, len(findWord)
+def find_word_b(sentence):
+        findWord = re.findall(r'\b\w*b\w*\b', sentence, re.I)
+        return findWord, len(findWord)
 
-# sentence = "This is a test sentence with some words containing i love boy you giot thoe broehseer boss dkfjb"
-# findBSentence, count = find_word_b(sentence)
+sentence = "This is a test sentence with some words containing i love boy you giot thoe broehseer boss dkfjb"
+findBSentence, count = find_word_b(sentence)
 
-# print(findBSentence, count)
+print(findBSentence, count)
 
 
 
@@ -412,3 +412,57 @@ with open("sosu.dat", 'w') as f:
 
 
 
+# 심폐지구력 : 호흡 기관이나 순환계가 발달되는 능력
+# 근력 : 근육이 힘을 발휘하고 있는 능력
+# 근지구력 : 근육이 오래 지속할 수 있는 능력
+# 유연성 : 부드럽게 움직일 수 있는 능력
+# 신체 구성 : 체내 지방, 뼈, 근육의 양을 비율로 나타낸 것
+
+# 순발력 : 짧은 시간에 최대의 힘을 발휘할 수 있는 능력
+# 민첩성 : 운동의 진행 방향을 신속하게 바꿀 수 있는 능력
+# 평형성 : 신체의 균형과 안정성을 유지할 수 있는 능력
+# 협응성 : 두 개 이상의 신체 부위를 동시에 사용할 수 있는 능력
+
+# 운동빈도 : 얼마나 자주 운동하는가
+# 운동강도 : 운동의 힘든 정도
+# 운동시간 : 운동의 총 시간
+# 운동유형 : 어떤 운동을 하는가
+
+
+# 안정시 심박수 : 60
+# 220 - 17 = 203
+
+# 203 - 60 = 143
+# 143 * 0.7 + 60
+
+# RICE
+# Rest Rest
+# Iciiing Icing
+# compressing compressing
+# elevation elivation
+
+# 심폐지구력 : 호흡 기관이나 순환계가 발달되는 능력
+# 근력 : 근육이 힘을 발휘하는 능력
+# 근지구력 : 근육이 오래 지속할 수 있는 능력
+# 유엲성 : 몸을 부드럽게 움직일 수 있는 능력
+# 신체 구성 : 신체의 체내 지방, 근육, 뼈 등을 비율로 나타낸 것
+
+# 순발력 : 짧은시간에 최대의 힘을 발휘할 수 있는 능력
+# 민첩성 : 빠르게 운동 방향을 바꿀 수 있는 능력
+# 협응성 : 두개 이상의 신체 부위를 동시에 사용할 수 있는 능력
+# 평행성 : 신체의 균형과 안정성을 유지할 수 있는 능력
+
+# 운동빈도 : 얼마나 자주 운동하나
+# 운동유형 : 어떤 운동을 하는가
+# 운동시간 : 운동의 총 시간
+# 운동강도 : 운동의 힘든 정도
+
+# 목표시 심박수 : 제공 : B
+# 안정시 심박수 : 제공 : 70?
+# 나이 : 제공 17?
+# 최대 심박수 = 220 - 나이
+# 안정시 심박수 = 60
+# 여유 심박수 = 최대 심박수 - 안정시 심박수
+# 목표 심박수 = 여유 심박수 * 0.7(70%) + 안정시 심박수
+
+# RICE : Rest, Icing, Compressing, Elevation

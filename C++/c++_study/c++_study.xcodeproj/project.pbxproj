@@ -25,6 +25,7 @@
 		D1C1C85A2B085E5E00F6F328 /* 1918.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1C1C8582B085E5B00F6F328 /* 1918.cpp */; };
 		D1C1C85D2B0A3DB000F6F328 /* 2522.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1C1C85B2B0A3DB000F6F328 /* 2522.cpp */; };
 		D1C1C8602B0AD1FA00F6F328 /* 1874.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1C1C85E2B0AD1FA00F6F328 /* 1874.cpp */; };
+		D1E542B02B25F35B00030EA2 /* 수 찾기 (1920).cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E542AE2B25F35800030EA2 /* 수 찾기 (1920).cpp */; };
 		D1FD2BB72B0E2D390012128D /* 별.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1FD2BB52B0E2D390012128D /* 별.cpp */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		D1C1C85B2B0A3DB000F6F328 /* 2522.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2522.cpp; sourceTree = "<group>"; };
 		D1C1C85E2B0AD1FA00F6F328 /* 1874.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1874.cpp; sourceTree = "<group>"; };
 		D1C1C85F2B0AD1FA00F6F328 /* 1874.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = 1874.hpp; sourceTree = "<group>"; };
+		D1E542AE2B25F35800030EA2 /* 수 찾기 (1920).cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "수 찾기 (1920).cpp"; sourceTree = "<group>"; };
+		D1E542AF2B25F35800030EA2 /* 수 찾기 (1920).hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "수 찾기 (1920).hpp"; sourceTree = "<group>"; };
 		D1FD2BB52B0E2D390012128D /* 별.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "별.cpp"; sourceTree = "<group>"; };
 		D1FD2BB62B0E2D390012128D /* 별.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "별.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +85,7 @@
 		D16F612E2B00FFBC00E927BD = {
 			isa = PBXGroup;
 			children = (
+				D1E542AF2B25F35800030EA2 /* 수 찾기 (1920).hpp */,
 				D140D8E32B162AE900585AE7 /* 1546.hpp */,
 				D191A7A72B13FF77009B3145 /* 10811.hpp */,
 				D191A7A32B13FF66009B3145 /* 10811.h */,
@@ -122,6 +126,7 @@
 				D1FD2BB52B0E2D390012128D /* 별.cpp */,
 				D191A7A62B13FF77009B3145 /* 10811.cpp */,
 				D140D8E22B162AE900585AE7 /* 1546.cpp */,
+				D1E542AE2B25F35800030EA2 /* 수 찾기 (1920).cpp */,
 			);
 			path = "c++_study";
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 				D191A7A82B13FF80009B3145 /* 10811.cpp in Sources */,
 				D1C1C8572B07558700F6F328 /* 15740.cpp in Sources */,
 				D1C1C8602B0AD1FA00F6F328 /* 1874.cpp in Sources */,
+				D1E542B02B25F35B00030EA2 /* 수 찾기 (1920).cpp in Sources */,
 				D1C1C8492B070FBA00F6F328 /* 2443.cpp in Sources */,
 				D1C1C8402B06FD5500F6F328 /* 2440.cpp in Sources */,
 			);
