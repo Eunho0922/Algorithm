@@ -40,11 +40,7 @@
 # a.append(4)
 # print(a)
 
-b = int(input())
-b = sorted(b)
 
-for i in range(len(b)):
-    print(b.pop())
 
 # print(b)
 # b.reverse()
@@ -67,3 +63,12 @@ for i in range(len(b)):
 # a = [1, 2, 3, 3, 5]
 # a.pop()
 # print(a)
+
+# a = [1, 2, 3, 1]
+# print(a.count(1)) # 리스트 안에 x가 몇 개 있는지 조사하여 그 개수를 리턴하는 함수
+
+a = [1, 2, 3]
+a.extend([4, 5])
+b = [6, 7]
+a.extend(b)
+print(a)
