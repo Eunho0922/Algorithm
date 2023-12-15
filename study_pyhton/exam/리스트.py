@@ -67,8 +67,16 @@
 # a = [1, 2, 3, 1]
 # print(a.count(1)) # 리스트 안에 x가 몇 개 있는지 조사하여 그 개수를 리턴하는 함수
 
-a = [1, 2, 3]
-a.extend([4, 5])
-b = [6, 7]
-a.extend(b)
-print(a)
+# a = [1, 2, 3]
+# a.extend([4, 5])
+# b = [6, 7]
+# a.extend(b)
+# print(a)
+
+a = input()
+b = a.split(" ")
+print(b)
+if (b[0] == ''):
+    print(len(b) - 1)
+else:
+    print(len(b))
