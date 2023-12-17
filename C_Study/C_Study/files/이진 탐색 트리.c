@@ -5,7 +5,7 @@
 //    int data;
 //    struct Treenode *left, *right;
 //};
-
+//
 //struct Treenode n1 = { 1, NULL, NULL };
 //struct Treenode n2 = { 3, NULL, NULL };
 //struct Treenode n3 = { 6, NULL, NULL };
