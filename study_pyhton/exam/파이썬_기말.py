@@ -22,24 +22,40 @@ LR_value = """
 
 # a = [1,3,5]
 # b = [2,4]
-# c = a.extend(b)
+# a.extend(b)
 
-# d = c
-# print(a,b,c,d)
-# print(id(a), id(c))
-# a = [1,2,3]
-# b = a
-# print(id(a), id(b))
-# b.extend([5])
-# print(id(a), id(b))
-# b = b + [6]
 # print(a,b)
-# print(id(a), id(b))
+# print(id(a))
+a = [1,2,3]
+b = a
+print(id(a), id(b))
+b = b + [4]
+b.extend([5])
+print(id(a), id(b))
+b = b + [6]
+print(a,b)
+print(id(a), id(b))
 
 # origin = [1,3,5,7,9]
 # l = [a*a for a in origin if a > 5 ]
 # print(l)
 
-import random
-origin = [random.randint(1,100) for _ in range(5000)]
-print(origin)
+# import random
+# origin = [random.randint(1,100) for _ in range(5000)]
+# print(origin)
+
+# with open("test.png", "rb") as f:
+#     byte = f.read(1)
+#     while byte != b"":
+#         print(byte)
+#         byte = f.read(1)
+
+# data = [1, 2, 3, 4, 5]
+# with open("data.bin", "wb") as f:
+#     f.write(bytes(data))
+
+# a = [1,2,3]
+# b = [4,5]
+# c = a + b
+# c[3] = 7
+# print(a,b,c)
