@@ -188,26 +188,26 @@
 #     print(str(year) + "년은 평년입니다.")
 
 # 7️⃣ 정규식
-import re
+# import re
 
-def find_words_with_b(sentence):
-        words_with_b = re.findall(r'\b\w*b\w*\b', sentence, re.I)
-        return words_with_b, len(words_with_b)
+# def find_words_with_b(sentence):
+#         words_with_b = re.findall(r'\b\w*b\w*\b', sentence, re.I)
+#         return words_with_b, len(words_with_b)
 
-sentence = "This is a test sentence with some words containing i love boy 'b'."
-words_with_b, count = find_words_with_b(sentence)
+# sentence = "This is a test sentence with some words containing i love boy 'b'."
+# words_with_b, count = find_words_with_b(sentence)
 
-print(f"'b'가 포함된 단어들: {words_with_b}")
-print(f"'b'가 포함된 단어의 수: {count}")
+# print(f"'b'가 포함된 단어들: {words_with_b}")
+# print(f"'b'가 포함된 단어의 수: {count}")
 
-def find_word_b(sentence):
-        findWord = re.findall(r'\b\w*b\w*\b', sentence, re.I)
-        return findWord, len(findWord)
+# def find_word_b(sentence):
+#         findWord = re.findall(r'\b\w*b\w*\b', sentence, re.I)
+#         return findWord, len(findWord)
 
-sentence = "This is a test sentence with some words containing i love boy you giot thoe broehseer boss dkfjb"
-findBSentence, count = find_word_b(sentence)
+# sentence = "This is a test sentence with some words containing i love boy you giot thoe broehseer boss dkfjb"
+# findBSentence, count = find_word_b(sentence)
 
-print(findBSentence, count)
+# print(findBSentence, count)
 
 
 
@@ -331,6 +331,8 @@ print(findBSentence, count)
 # scores = [random.randint(0, 100) for i in range(200)]
 # grades = [grade(score) for score in scores]
 
+for i in range(100):
+        print(i)
 
 # with open('grade5', 'w') as f:
 #     for scores, grades in zip(scores, grades):

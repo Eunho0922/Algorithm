@@ -73,10 +73,72 @@
 # a.extend(b)
 # print(a)
 
-a = input()
-b = a.split(" ")
-print(b)
-if (b[0] == ''):
-    print(len(b) - 1)
-else:
-    print(len(b))
+
+# dic = {'name': 'pey', 'phone': '010-9999-1234', 'birth': '1118'}
+# dic['hello'] = "hi"
+# del dic['name']
+# dic1 = {1: 'a', 1: 'b'}
+# print(dic1)
+# print(dic)
+
+
+
+# ab = [1,2,3,4,5,6,7,8,9,10]
+# fuckMyDick = [a for a in ab]
+
+# import random as rd
+# ass = [a for in re.]
+
+
+# a = [1,2,3,4]
+# result = [num for num in a if num % 2 == 0]
+# result1 = [x*y for x in range(2,10) for y in range(1,10)]
+# print(result1)
+
+# def add_many(*args):
+#     result = 0
+#     for i in args:
+#         result += i
+#     return result
+
+# b = add_many(1,2,3,4,5,6,7,8,9,10)
+
+# print(b)
+
+# def print_kwargs(**kwargs):
+#     print(kwargs)
+
+# print_kwargs(a=1)
+# print_kwargs(name='tyler', age=3)
+
+# add = lambda a,b : a+b
+# result = add(3,4)
+# print(result)
+
+# f = open('연습파일.txt', 'w')
+# for i in range(1, 10):
+#     write = ("%d번째 줄입니다\n" % i)
+#     f.write(write)
+
+
+# while True:
+#     line = f.readline()
+#     if not line: break
+#     print(line)
+
+
+# lines = f.readlines()
+# for line in lines:
+#     line = line.strip()
+#     print(line)
+
+# data = f.read()
+# print(data)
+
+# for i in range(11, 20):
+#     data = "%d번째 줄입니다.\n" % i
+#     f.write(data)
+
+with open("foo.txt", 'w') as f:
+    f.write("Life is too short, you need python")
+
