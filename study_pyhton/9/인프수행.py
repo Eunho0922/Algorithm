@@ -303,15 +303,15 @@
 
 
 # 333333333
-# import random
+import random
 
-# def calculate(num, div):
-#     return sum(i for i in num if i % div == 0)
+def calculate(num, div):
+        return sum(i for i in num if i % div == 0)
 
-# numbers = [random.randint(0,100) for i in range(200)]
+numbers = [random.randint(0,100) for i in range(200)]
 
-# print(calculate(numbers, 5))
-# print(calculate(numbers, 7))
+print(calculate(numbers, 5))
+print(calculate(numbers, 7))
 
 #444444
 # import random
@@ -331,8 +331,8 @@
 # scores = [random.randint(0, 100) for i in range(200)]
 # grades = [grade(score) for score in scores]
 
-for i in range(100):
-        print(i)
+# for i in range(100):
+#         print(i)
 
 # with open('grade5', 'w') as f:
 #     for scores, grades in zip(scores, grades):
@@ -343,24 +343,23 @@ for i in range(100):
 #         f.write(f'scores : {scores}, grades : {grades}\n')
 
 #5555555
-# def calculate_year(year):
-#     if year % 4 == 0:
-#         if year % 100 == 0:
-#             if year % 400 == 0:
-#                 return True
-#             else:
-#                 return False
-#         else: 
-#             return True
-#     else: 
-#         return False
-    
-# a = int(input("년도를 입력하세요 : "))
+def calculate_year(year):
+        if year % 4 == 0:
+                if year % 100 == 0:
+                        if year % 400 == 0:
+                                return True
+                        else:
+                                return False
+                else: 
+                        return True
+        else: 
+                return False
+a = int(input("년도를 입력하세요 : "))
 
-# if calculate_year(a):
-#     print("윤년")
-# else:
-#     print("평년")
+if calculate_year(a):
+    print("윤년")
+else:
+    print("평년")
 
 #66666666666
 
