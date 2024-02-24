@@ -1,8 +1,19 @@
+//#include <bits/stdc++.h>
+//#include <iostream>
+//using namespace std;
 //
-//  define.cpp
-//  c++_study
+//#define PI 3.14159
+//#define loop(x, n) for(int x; x < n; x++)
 //
-//  Created by 이은호 on 1/1/24.
+//int main() {
+//    cout << PI << endl;
+//    int sum = 0;
+//    loop(i , 10) {
+//        sum += 1;
+//    }
+//    
+//    cout << sum << endl;
 //
+//}
 
-#include "define.hpp"
+

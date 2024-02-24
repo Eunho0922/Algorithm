@@ -15,14 +15,14 @@
 //struct Treenode* root;
 //
 //// 재귀함수 -> 시험은 재귀로
-//struct Treenode* search(struct Treenode* node, int key) {
-//    if (node == NULL) return NULL;
-//    if (key == node->data) return node;
-//    else if (key < node->data)
-//        return search(node->left, key);
-//    else
-//        return search(node->right, key);
-//}
+////struct Treenode* search(struct Treenode* node, int key) {
+////    if (node == NULL) return NULL;
+////    if (key == node->data) return node;
+////    else if (key < node->data)
+////        return search(node->left, key);
+////    else
+////        return search(node->right, key);
+////}
 //
 //struct Treenode* new_node(int key) {
 //    struct Treenode* new = (struct Treenode*)malloc(sizeof(struct Treenode));

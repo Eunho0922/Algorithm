@@ -1,8 +1,14 @@
+//#include <bits/stdc++.h>
+//#include <iostream>
+//using namespace std; int T;
+//string s;
+//int main(){
+//cin >> T;
+//       string bufferflush;
+//      getline(cin, bufferflush);
+//    for(int i = 0; i < T; i++){
+//        getline(cin, s);
+//        cout << s << "\n"; return 0;
+//    }
+//}
 //
-//  getline.cpp
-//  c++_study
-//
-//  Created by 이은호 on 1/1/24.
-//
-
-#include "getline.hpp"
